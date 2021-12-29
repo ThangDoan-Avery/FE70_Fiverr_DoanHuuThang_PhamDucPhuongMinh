@@ -1,0 +1,23 @@
+.btn {
+  border-radius: 4px;
+  font-weight: 700;
+  border: 1px solid $green-color;
+  transition: 0.2s linear;
+}
+
+.btn--contained {
+  background-color: $green-color;
+  color: #fff;
+  &:hover {
+    background-color: #19a463;
+    color: #fff;
+  }
+}
+
+.btn--light {
+  color: $green-color;
+  &:hover {
+    color: #fff;
+    background-color: $green-color;
+  }
+}

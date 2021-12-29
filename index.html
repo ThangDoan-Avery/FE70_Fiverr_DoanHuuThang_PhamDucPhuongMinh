@@ -1,10 +1,308 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Fiverr</title>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,500&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Slick -->
+    <link rel="stylesheet" href="./lib/slick/slick.css" />
+    <link rel="stylesheet" href="./lib/slick/slick-theme.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- START HEADER -->
+    <header class="header">
+      <div class="header-top">
+        <div class="header-top__container container-fluid">
+          <div class="header__toggle-menu">
+            <i class="fas fa-bars"></i>
+          </div>
+          <div class="header__logo">
+            <a href="#">fiverr<span>.</span></a>
+          </div>
+          <div class="header__search-input">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Find Services" />
+            <button class="btn btn--contained">Search</button>
+          </div>
+          <div class="header__options">
+            <div class="header__options--link">
+              <a href="#">Fiverr Business</a>
+            </div>
+            <div class="header__options--explore">
+              <span>Explore</span>
+              <ul>
+                <li>
+                  <h6>Discover</h6>
+                  <p>Inspiring projects made on Fiverr</p>
+                </li>
+                <li>
+                  <h6>Community</h6>
+                  <p>Connect with Fiverr’s team and community</p>
+                </li>
+                <li>
+                  <h6>Guides</h6>
+                  <p>In-depth guides covering business topics</p>
+                </li>
+                <li>
+                  <h6>Podcast</h6>
+                  <p>Inside tips from top business minds</p>
+                </li>
+                <li>
+                  <h6>Learn</h6>
+                  <p>Professional online courses, led by experts</p>
+                </li>
+                <li>
+                  <h6>Blog</h6>
+                  <p>News, information and community stories</p>
+                </li>
+                <li>
+                  <h6>Logo Maker</h6>
+                  <p>Create your logo instantly</p>
+                </li>
+              </ul>
+            </div>
+            <div class="header__options--languages">
+              <span><i class="fas fa-globe-europe"></i> English</span>
+              <ul>
+                <li class="active">English</li>
+                <li>Deutsch</li>
+                <li>Español</li>
+                <li>Español</li>
+                <li>Português</li>
+                <li>Italiano</li>
+                <li>Nederlands</li>
+              </ul>
+            </div>
+            <div class="header__options--cash">
+              <span>$ USD</span>
+              <ul>
+                <li class="active">
+                  <h6>United States Dollar</h6>
+                  <p>USD - $</p>
+                </li>
+                <li>
+                  <h6>Euro</h6>
+                  <p>EUR - €</p>
+                </li>
+                <li>
+                  <h6>British Pound</h6>
+                  <p>GBP - £</p>
+                </li>
+                <li>
+                  <h6>Australian Dollar</h6>
+                  <p>AUD - A$</p>
+                </li>
+                <li>
+                  <h6>Canadian Dollar</h6>
+                  <p>CAD - CA$</p>
+                </li>
+                <li>
+                  <h6>Israeli Shekel</h6>
+                  <p>ILS - ₪</p>
+                </li>
+                <li>
+                  <h6>Brazilian Real</h6>
+                  <p>BRL - R$</p>
+                </li>
+                <li>
+                  <h6>Hong Kong Dollar</h6>
+                  <p>HKD - HK$</p>
+                </li>
+                <li>
+                  <h6>Swedish Krona</h6>
+                  <p>SEK - SEK</p>
+                </li>
+              </ul>
+            </div>
+            <div class="header__options--link">
+              <a href="#">Become a Seller</a>
+            </div>
+            <div class="header__options--link">
+              <a href="#">Sign in</a>
+            </div>
+            <div class="header__options--link">
+              <a href="#" class="btn btn--light">Join</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav class="header-bottom">
+        <div class="nav__container container-fluid">
+          <ul class="nav__list">
+            <li class="nav__item">
+              <a href="#">Graphics & Design</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Digital Marketing</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Writing & Translation</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Video & Animation</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Music & Audio</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Programming & Tech</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Business</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Lifestyle</a>
+            </li>
+            <li class="nav__item">
+              <a href="#">Trending</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- END HEADER -->
+    <!-- START MENU ON TABLET AND PHONE -->
+    <section class="menu-phone">
+      <div class="overlay"></div>
+      <div class="menu-phone__main">
+        <button class="btn btn--contained">Join Fiverr</button>
+        <a href="#">Sign in</a>
+        <div class="menu-phone__item arrow">
+          <h6>Browse Categories</h6>
+          <ul class="menu-phone__nav">
+            <li>Graphics & Design</li>
+            <li>Digital Marketing</li>
+            <li>Writing & Translation</li>
+            <li>Video & Animation</li>
+            <li>Music & Audio</li>
+            <li>Programming & Tech</li>
+            <li>Business</li>
+            <li>Lifestyle</li>
+            <li>Trending</li>
+          </ul>
+        </div>
+        <div class="menu-phone__item arrow">
+          <h6>Explore</h6>
+          <ul class="menu-phone__nav">
+            <li>Discover</li>
+            <li>Guides</li>
+            <li>Learn</li>
+            <li>Logo Maker</li>
+            <li>Community</li>
+            <li>Postcast</li>
+            <li>Blog</li>
+          </ul>
+        </div>
+        <a href="#" class="green-color">Fiverr Pro</a>
+        <a href="#" class="green-color">Fiverr Bussiness</a>
+        <h5>General</h5>
+        <a href="#">Home</a>
+        <div class="menu-phone__item arrow">
+          <h6>English <i class="fas fa-globe-europe"></i></h6>
+          <ul class="menu-phone__nav m-0">
+            <li>English</li>
+            <li>Deutsch</li>
+            <li>Español</li>
+            <li>Español</li>
+            <li>Português</li>
+            <li>Italiano</li>
+            <li>Nederlands</li>
+          </ul>
+        </div>
+        <div class="menu-phone__item arrow">
+          <h6>$ USD</i></h6>
+          <ul class="menu-phone__nav">
+            <li>USD - $</li>
+            <li>EUR - €</li>
+            <li>GBP - £</li>
+            <li>AUD - A$</li>
+            <li>CAD - CA$</li>
+            <li>ILS - ₪</li>
+            <li>BRL - R$</li>
+            <li>HKD - HK$</li>
+            <li>SEK - SEK</li>
+            <li>NZD - NZ$</li>
+            <li>SGD - SGD</li>
+          </ul>
+        </div>
+        <a href="#">Open in App</a>
+      </div>
+    </section>
+    <!-- END MENU ON TABLET AND PHONE -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Slick -->
+    <script src="./lib/slick/slick.min.js"></script>
+    <script>
+      // when click carousel, slide is not autoplay
+      // This is solution, slide is autoplay when click other window/tab
+      $("#latest-news-wrapper").on(
+        "beforeChange",
+        function (event, slick, currentSlide, nextSlide) {
+          $("#latest-news-wrapper .slick-dots li")
+            .removeClass("slick-active")
+            .attr("aria-hidden", "true");
+          $("#latest-news-wrapper .slick-dots li button").focus(function () {
+            this.blur();
+          });
+        }
+      );
+
+      $(document).ready(function () {
+        $(".carousel__background").slick({
+          dots: false,
+          infinite: true,
+          speed: 500,
+          fade: true,
+          cssEase: "linear",
+          autoplay: true,
+        });
+      });
+    </script>
+    <!-- JS -->
+    <script src="./js/home.js"></script>
+  </body>
 </html>
