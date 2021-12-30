@@ -40,7 +40,7 @@
     <!-- START HEADER -->
     <header class="header">
       <div class="header-top">
-        <div class="header-top__container container-fluid">
+        <div class="header-top__container container-fluid wrapper">
           <div class="header__toggle-menu">
             <i class="fas fa-bars"></i>
           </div>
@@ -155,7 +155,7 @@
         </div>
       </div>
       <nav class="header-bottom">
-        <div class="nav__container container-fluid">
+        <div class="nav__container container-fluid wrapper">
           <ul class="nav__list">
             <li class="nav__item">
               <a href="#">Graphics & Design</a>
@@ -257,6 +257,57 @@
       </div>
     </section>
     <!-- END MENU ON TABLET AND PHONE -->
+    <!-- START CAROUSEL -->
+    <div class="carousel">
+      <div class="carousel__container">
+        <div class="carousel__background">
+          <div class="carousel__item" style="background: #023a15;">
+            <div class="carousel__image">
+              <img src="./images/home-carousel-1-big.jpeg" alt="">
+            </div>
+          </div>
+          <div class="carousel__item" style="background: #b54662;">
+            <div class="carousel__image">
+              <img src="./images/home-carousel-2-big.jpeg" alt="">
+            </div>
+          </div>
+          <div class="carousel__item" style="background: #560f20;">
+            <div class="carousel__image">
+              <img src="./images/home-carousel-3-big.jpeg" alt="">
+            </div>
+          </div>
+          <div class="carousel__item" style="background: #023a15;">
+            <div class="carousel__image">
+              <img src="./images/home-carousel-4-big.jpeg" alt="">
+            </div>
+          </div>
+          <div class="carousel__item" style="background: #7f1a01;">
+            <div class="carousel__image">
+              <img src="./images/home-carousel-5-big.jpeg" alt="">
+            </div>
+          </div>
+        </div>
+        <div class="container-fluid wrapper">
+          <div class="carousel__content">
+            <h1 class="carousel__title">Find the perfect <span>freelance</span></h1>
+            <h1 class="carousel__title">services for your business</h1>
+            <div class="carousel__search-input">
+              <i class="fas fa-search"></i>
+              <input type="text" placeholder='Try "building mobile app"'>
+              <button class="btn btn--contained">Search</button>
+            </div>
+            <div class="carousel__popular">
+              <span>Popular: </span>
+              <a href="#">Website Design</a>
+              <a href="#">WordPress</a>
+              <a href="#">Logo Design</a>
+              <a href="#">NFT Art</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- END CAROUSEL -->
     <!-- Optional JavaScript -->
     <!-- jQuery first, then Popper.js, then Bootstrap JS -->
     <script
@@ -276,32 +327,6 @@
     ></script>
     <!-- Slick -->
     <script src="./lib/slick/slick.min.js"></script>
-    <script>
-      // when click carousel, slide is not autoplay
-      // This is solution, slide is autoplay when click other window/tab
-      $("#latest-news-wrapper").on(
-        "beforeChange",
-        function (event, slick, currentSlide, nextSlide) {
-          $("#latest-news-wrapper .slick-dots li")
-            .removeClass("slick-active")
-            .attr("aria-hidden", "true");
-          $("#latest-news-wrapper .slick-dots li button").focus(function () {
-            this.blur();
-          });
-        }
-      );
-
-      $(document).ready(function () {
-        $(".carousel__background").slick({
-          dots: false,
-          infinite: true,
-          speed: 500,
-          fade: true,
-          cssEase: "linear",
-          autoplay: true,
-        });
-      });
-    </script>
     <!-- JS -->
     <script src="./js/home.js"></script>
   </body>
