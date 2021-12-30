@@ -6,6 +6,10 @@
     @include Responsive(MD) {
       border: none;
     }
+    @include Responsive(SM) {
+      padding-left: 0;
+      padding-right: 0;
+    }
     &__container {
       display: flex;
       align-items: center;
@@ -365,6 +369,7 @@
     }
   }
   &-bottom {
+    padding: 0 32px;
     @include Responsive(XXL) {
       display: none;
     }
@@ -372,7 +377,6 @@
       .nav__list {
         display: flex;
         justify-content: space-between;
-        padding: 0 32px;
         .nav__item {
           font-size: 1.4rem;
           font-weight: 500;
