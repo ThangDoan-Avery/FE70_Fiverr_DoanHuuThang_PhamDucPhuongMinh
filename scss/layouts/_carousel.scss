@@ -1,0 +1,155 @@
+.carousel {
+  &__container {
+    height: 680px;
+    background-color: #023a15;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding: 0 32px;
+    @include Responsive(MD) {
+      height: 415px;
+    }
+    @include Responsive(SM) {
+      height: fit-content;
+    }
+    .carousel__background {
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      .slick-arrow {
+        display: none !important;
+      }
+      .carousel__item {
+        @include Responsive(MD) {
+          display: none;
+        }
+        .carousel__image {
+          width: fit-content;
+          margin: 0 auto;
+          @include Responsive(XXXL) {
+            width: unset;
+          }
+          img {
+            height: 680px;
+            @include Responsive(XXXL) {
+              transform: translateX(-150px);
+            }
+            @include Responsive(XXL) {
+              transform: translateX(-300px);
+            }
+            @include Responsive(XL) {
+              transform: translateX(-450px);
+            }
+            @include Responsive(LG) {
+              transform: translateX(-600px);
+            }
+          }
+        }
+      }
+    }
+    .carousel__content {
+      position: relative;
+      z-index: 2;
+      width: 70%;
+      color: #fff;
+      @include Responsive(MD) {
+        width: fit-content;
+        margin: 0 auto;
+      }
+      @include Responsive(SM) {
+        width: 100%;
+        margin: 0 -15px;
+        padding: 48px 0;
+      }
+      .carousel__title {
+        color: #fff;
+        font-size: 4.8rem;
+        line-height: 5.6rem;
+        font-weight: 500;
+        span {
+          font-family: $font-display;
+          font-style: italic;
+        }
+        @include Responsive(XXL) {
+          font-size: 4rem;
+        }
+        @include Responsive(SM) {
+          font-size: 3.2rem;
+        }
+      }
+      .carousel__search-input {
+        position: relative;
+        display: flex;
+        align-items: center;
+        margin-top: 24px;
+        @include Responsive(MD) {
+          display: block;
+        }
+        i {
+          position: absolute;
+          top: 50%;
+          left: 14px;
+          transform: translateY(-50%);
+          font-size: 2rem;
+          opacity: 0.6;
+          color: $black-color;
+          @include Responsive(MD) {
+            top: 25%;
+          }
+        }
+        input {
+          height: 48px;
+          padding: 7px 7px 7px 44px;
+          font-size: 1.6rem;
+          width: 500px;
+          outline: none;
+          border: none;
+          border-radius: 4px 0 0 4px;
+          font-weight: 300;
+          @include Responsive(MD) {
+            width: 100%;
+            margin-bottom: 12px;
+            border-radius: 4px;
+          }
+        }
+        button {
+          height: 48px;
+          font-size: 1.6rem;
+          border-radius: 0 4px 4px 0;
+          padding: 12px 24px;
+          font-weight: 400;
+          letter-spacing: 1px;
+          @include Responsive(MD) {
+            display: block;
+            width: 100%;
+            border-radius: 4px;
+          }
+        }
+      }
+      .carousel__popular {
+        margin-top: 24px;
+        @include Responsive(MD) {
+          display: none;
+        }
+        span {
+          font-size: 1.4rem;
+        }
+        a {
+          font-size: 1.4rem;
+          color: inherit;
+          border: 1px solid #fff;
+          border-radius: 20px;
+          padding: 3px 12px;
+          margin-left: 12px;
+          transition: 0.2s linear;
+          &:hover {
+            background-color: #fff;
+            color: $black-color;
+          }
+        }
+      }
+    }
+  }
+}
