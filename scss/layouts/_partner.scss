@@ -1,0 +1,38 @@
+.partner {
+  padding: 0 32px;
+  background-color: #fafafa;
+  &__container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 95px;
+    padding: 0 15px;
+    .partner__title {
+      font-size: 1.6rem;
+      line-height: 2.4rem;
+      font-weight: 400;
+      color: #c3c3c3;
+      margin-left: 40px;
+      @include Responsive(XL) {
+        display: none;
+      }
+    }
+    .partner__logo {
+      margin-left: 60px;
+      img {
+        height: 60px;
+      }
+      @include Responsive(MD) {
+        margin: 0 12px;
+      }
+      @include Responsive(SM) {
+        img {
+          height: 50px;
+        }
+        &:last-child {
+          display: none;
+        }
+      }
+    }
+  }
+}

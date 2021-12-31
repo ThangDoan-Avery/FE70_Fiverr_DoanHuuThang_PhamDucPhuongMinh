@@ -1053,4 +1053,60 @@ html {
   background-color: #fff;
   color: #404145;
 }
+
+.partner {
+  padding: 0 32px;
+  background-color: #fafafa;
+}
+
+.partner__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  height: 95px;
+  padding: 0 15px;
+}
+
+.partner__container .partner__title {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 400;
+  color: #c3c3c3;
+  margin-left: 40px;
+}
+
+@media only screen and (max-width: 1068px) {
+  .partner__container .partner__title {
+    display: none;
+  }
+}
+
+.partner__container .partner__logo {
+  margin-left: 60px;
+}
+
+.partner__container .partner__logo img {
+  height: 60px;
+}
+
+@media only screen and (max-width: 800px) {
+  .partner__container .partner__logo {
+    margin: 0 12px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .partner__container .partner__logo img {
+    height: 50px;
+  }
+  .partner__container .partner__logo:last-child {
+    display: none;
+  }
+}
 /*# sourceMappingURL=style.css.map */
