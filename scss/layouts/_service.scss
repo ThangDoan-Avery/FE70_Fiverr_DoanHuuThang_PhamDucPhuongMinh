@@ -1,0 +1,100 @@
+.service {
+  padding: 96px 32px;
+  @include Responsive(LG) {
+    padding: 80px 32px;
+  }
+  @include Responsive(SM) {
+    padding: 45px 32px;
+  }
+  &__container {
+    .service__title {
+      font-size: 3.2rem;
+      margin-bottom: 24px;
+      font-weight: 500;
+      line-height: 120%;
+    }
+    .service__list {
+      margin: 0 -18px;
+      .slick-arrow {
+        width: 48px;
+        height: 48px;
+        box-shadow: 0 2px 5px 0 #00000026;
+        background-color: #fff;
+        border-radius: 100%;
+        z-index: 2;
+        &::before {
+          color: #000;
+          opacity: 1;
+          width: 48px;
+          height: 48px;
+        }
+      }
+      .slick-arrow.slick-prev {
+        left: -6px;
+        &::before {
+          content: "\f053";
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+        }
+      }
+      .slick-arrow.slick-next {
+        right: -6px;
+        &::before {
+          content: "\f054";
+          font-family: "Font Awesome 5 Free";
+          font-weight: 900;
+        }
+      }
+      .slick-dots {
+        display: none !important;
+      }
+      .service__item {
+        position: relative;
+        height: 345px;
+        width: fit-content;
+        margin: 0 18px;
+        cursor: pointer;
+        h5 {
+          position: absolute;
+          top: 0;
+          left: 0;
+          width: 100%;
+          height: fit-content;
+          padding: 16px;
+          color: #fff;
+          font-size: 2.4rem;
+          font-weight: 500;
+          small {
+            font-size: 1.4rem;
+            line-height: 2rem;
+            display: block;
+            font-weight: 300;
+          }
+        }
+        img {
+          height: 100%;
+          width: 100%;
+          object-fit: cover;
+          object-position: center 70%;
+        }
+        &::after {
+          content: "";
+          display: block;
+          width: 100%;
+          height: 100%;
+          position: absolute;
+          top: 0;
+          left: 0;
+          background-color: #c3c3c333;
+          opacity: 0;
+          transition: 0.2s linear;
+        }
+        &:hover {
+          &::after {
+            opacity: 1;
+          }
+        }
+      }
+    }
+  }
+}

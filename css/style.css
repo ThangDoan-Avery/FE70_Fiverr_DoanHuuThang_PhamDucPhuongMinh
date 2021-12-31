@@ -1109,4 +1109,130 @@ html {
     display: none;
   }
 }
+
+.service {
+  padding: 96px 32px;
+}
+
+@media only screen and (max-width: 960px) {
+  .service {
+    padding: 80px 32px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .service {
+    padding: 45px 32px;
+  }
+}
+
+.service__container .service__title {
+  font-size: 3.2rem;
+  margin-bottom: 24px;
+  font-weight: 500;
+  line-height: 120%;
+}
+
+.service__container .service__list {
+  margin: 0 -18px;
+}
+
+.service__container .service__list .slick-arrow {
+  width: 48px;
+  height: 48px;
+  -webkit-box-shadow: 0 2px 5px 0 #00000026;
+          box-shadow: 0 2px 5px 0 #00000026;
+  background-color: #fff;
+  border-radius: 100%;
+  z-index: 2;
+}
+
+.service__container .service__list .slick-arrow::before {
+  color: #000;
+  opacity: 1;
+  width: 48px;
+  height: 48px;
+}
+
+.service__container .service__list .slick-arrow.slick-prev {
+  left: -6px;
+}
+
+.service__container .service__list .slick-arrow.slick-prev::before {
+  content: "\f053";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.service__container .service__list .slick-arrow.slick-next {
+  right: -6px;
+}
+
+.service__container .service__list .slick-arrow.slick-next::before {
+  content: "\f054";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+}
+
+.service__container .service__list .slick-dots {
+  display: none !important;
+}
+
+.service__container .service__list .service__item {
+  position: relative;
+  height: 345px;
+  width: -webkit-fit-content;
+  width: -moz-fit-content;
+  width: fit-content;
+  margin: 0 18px;
+  cursor: pointer;
+}
+
+.service__container .service__list .service__item h5 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: -webkit-fit-content;
+  height: -moz-fit-content;
+  height: fit-content;
+  padding: 16px;
+  color: #fff;
+  font-size: 2.4rem;
+  font-weight: 500;
+}
+
+.service__container .service__list .service__item h5 small {
+  font-size: 1.4rem;
+  line-height: 2rem;
+  display: block;
+  font-weight: 300;
+}
+
+.service__container .service__list .service__item img {
+  height: 100%;
+  width: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: center 70%;
+     object-position: center 70%;
+}
+
+.service__container .service__list .service__item::after {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background-color: #c3c3c333;
+  opacity: 0;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
+.service__container .service__list .service__item:hover::after {
+  opacity: 1;
+}
 /*# sourceMappingURL=style.css.map */
