@@ -1235,4 +1235,130 @@ html {
 .service__container .service__list .service__item:hover::after {
   opacity: 1;
 }
+
+.benefit {
+  padding: 96px 32px;
+  background-color: #f0fdf6;
+}
+
+@media only screen and (max-width: 1068px) {
+  .benefit {
+    padding: 64px 32px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .benefit {
+    padding: 48px 32px;
+  }
+}
+
+.benefit__container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.benefit__container .benefit__content {
+  width: 50%;
+  padding-right: 16%;
+}
+
+@media only screen and (max-width: 1284px) {
+  .benefit__container .benefit__content {
+    padding-right: 10%;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .benefit__container .benefit__content {
+    width: 100%;
+    padding-bottom: 48px;
+  }
+}
+
+.benefit__container .benefit__content .benefit__title {
+  font-size: 3.2rem;
+  line-height: 120%;
+  font-weight: 500;
+  margin-bottom: 24px;
+}
+
+.benefit__container .benefit__content .benefit__list .benefit__item {
+  margin-bottom: 24px;
+}
+
+.benefit__container .benefit__content .benefit__list .benefit__item h5 {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  font-size: 1.8rem;
+  margin-bottom: 8px;
+  font-weight: 500;
+}
+
+.benefit__container .benefit__content .benefit__list .benefit__item h5 i {
+  font-size: 2.4rem;
+  margin-right: 10px;
+  color: #7a7d84;
+}
+
+.benefit__container .benefit__content .benefit__list .benefit__item p {
+  font-size: 1.8rem;
+  line-height: 2.6rem;
+  color: #7a7d84;
+  font-weight: 300;
+}
+
+.benefit__container .benefit__thumnail-video {
+  width: 50%;
+  position: relative;
+  cursor: pointer;
+  border-radius: 4px;
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 960px) {
+  .benefit__container .benefit__thumnail-video {
+    width: 100%;
+  }
+}
+
+.benefit__container .benefit__thumnail-video img {
+  width: 100%;
+}
+
+.benefit__container .benefit__thumnail-video::after {
+  content: "\f04b";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+  height: 80px;
+  width: 80px;
+  color: #fff;
+  font-size: 3rem;
+  background-color: #00000070;
+  border-radius: 50%;
+}
 /*# sourceMappingURL=style.css.map */

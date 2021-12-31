@@ -1,0 +1,87 @@
+.benefit {
+  padding: 96px 32px;
+  background-color: #f0fdf6;
+  @include Responsive(XL) {
+    padding: 64px 32px;
+  }
+  @include Responsive(LG) {
+    padding: 48px 32px;
+  }
+
+  &__container {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    .benefit__content {
+      width: 50%;
+      padding-right: 16%;
+      @include Responsive(XXL) {
+        padding-right: 10%;
+      }
+      @include Responsive(LG) {
+        width: 100%;
+        padding-bottom: 48px;
+      }
+      .benefit__title {
+        font-size: 3.2rem;
+        line-height: 120%;
+        font-weight: 500;
+        margin-bottom: 24px;
+      }
+      .benefit__list {
+        .benefit__item {
+          margin-bottom: 24px;
+          h5 {
+            display: flex;
+            align-items: center;
+            font-size: 1.8rem;
+            margin-bottom: 8px;
+            font-weight: 500;
+            i {
+              font-size: 2.4rem;
+              margin-right: 10px;
+              color: $grey-color;
+            }
+          }
+          p {
+            font-size: 1.8rem;
+            line-height: 2.6rem;
+            color: $grey-color;
+            font-weight: 300;
+          }
+        }
+      }
+    }
+    .benefit__thumnail-video {
+      width: 50%;
+      position: relative;
+      cursor: pointer;
+      border-radius: 4px;
+      overflow: hidden;
+      @include Responsive(LG) {
+        width: 100%;
+      }
+      img {
+        width: 100%;
+      }
+      &::after {
+        content: "\f04b";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 80px;
+        width: 80px;
+        color: #fff;
+        font-size: 3rem;
+        background-color: #00000070;
+        border-radius: 50%;
+      }
+    }
+  }
+}
