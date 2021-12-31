@@ -1,8 +1,3 @@
-const menuPhoneItems = document.querySelectorAll(".menu-phone__item");
-const menuToggle = document.querySelector(".header__toggle-menu");
-const menuPhone = document.querySelector(".menu-phone");
-const menuOverlay = document.querySelector(".menu-phone .overlay");
-
 // Slick Carousel
 // when click carousel, slide is not autoplay
 // This is solution, slide is autoplay when click other window/tab
@@ -69,6 +64,11 @@ $(document).ready(function () {
 });
 
 // Popup Menu
+const menuPhoneItems = document.querySelectorAll(".menu-phone__item");
+const menuToggle = document.querySelector(".header__toggle-menu");
+const menuPhone = document.querySelector(".menu-phone");
+const menuOverlay = document.querySelector(".menu-phone .overlay");
+
 menuPhoneItems.forEach((menuPhoneItem) => {
   menuPhoneItem.onclick = () => {
     let isOpen = menuPhoneItem.classList.contains("open");
@@ -101,4 +101,34 @@ menuOverlay.onclick = () => {
   menuPhone.style.visibility = "hidden";
   menuPhone.querySelector(".menu-phone__main").style.transform =
     "translateX(-100%)";
+};
+
+// popup video
+const thumbnailVideoBenefit = document.querySelector(
+  ".benefit__thumnail-video"
+);
+const popupVideo = document.querySelector(".popup-video");
+const videoTag = document.querySelector(".popup-video .popup-video__video");
+let srcVideo;
+const popupVideoOverlay = document.querySelector(
+  ".popup-video .popup-video__overlay"
+);
+
+const openPopupVideo = () => {
+  popupVideo.style.opacity = "1";
+  popupVideo.style.visibility = "visible";
+  videoTag.setAttribute("src", srcVideo);
+  document.querySelector("body").classList.add("noscroll");
+};
+
+thumbnailVideoBenefit.onclick = (e) => {
+  srcVideo = thumbnailVideoBenefit.getAttribute("data-srcVideo");
+  openPopupVideo();
+};
+
+popupVideoOverlay.onclick = () => {
+  popupVideo.style.opacity = "0";
+  popupVideo.style.visibility = "hidden";
+  videoTag.setAttribute("src", "");
+  document.querySelector("body").classList.remove("noscroll");
 };
