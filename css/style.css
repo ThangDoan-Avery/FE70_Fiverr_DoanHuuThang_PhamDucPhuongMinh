@@ -417,7 +417,7 @@ html {
 
 .header-top__container .header__options .header__options--explore ul {
   position: absolute;
-  z-index: 2;
+  z-index: 10;
   bottom: -25px;
   left: 50%;
   padding: 16px 0;
@@ -519,7 +519,7 @@ html {
 
 .header-top__container .header__options .header__options--languages ul {
   position: absolute;
-  z-index: 2;
+  z-index: 10;
   bottom: -5px;
   right: 0;
   padding: 16px 0;
@@ -596,7 +596,7 @@ html {
 
 .header-top__container .header__options .header__options--cash ul {
   position: absolute;
-  z-index: 2;
+  z-index: 10;
   bottom: -5px;
   right: 0;
   padding: 16px 0;
