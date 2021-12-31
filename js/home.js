@@ -27,6 +27,45 @@ $(document).ready(function () {
     cssEase: "linear",
     autoplay: true,
   });
+
+  $(".service__list").slick({
+    dots: true,
+    speed: 300,
+    slidesToShow: 5,
+    slidesToScroll: 5,
+    infinite: true,
+    responsive: [
+      {
+        breakpoint: 1224,
+        settings: {
+          slidesToShow: 4,
+          slidesToScroll: 4,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 1059,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+        },
+      },
+      {
+        breakpoint: 799,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 599,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
 });
 
 // Popup Menu
