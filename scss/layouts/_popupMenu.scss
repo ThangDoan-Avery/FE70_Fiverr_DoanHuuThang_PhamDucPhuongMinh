@@ -9,7 +9,7 @@
   transition: 0.2s linear;
   z-index: 998;
   .overlay {
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     width: 100%;
@@ -23,7 +23,7 @@
     transition: 0.2s linear;
     overflow-y: scroll;
     padding: 20px;
-    position: absolute;
+    position: fixed;
     top: 0;
     left: 0;
     bottom: 0;
