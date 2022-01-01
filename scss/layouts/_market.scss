@@ -1,0 +1,64 @@
+.market {
+  padding: 96px 32px;
+  @include Responsive(LG) {
+    padding: 80px 32px;
+  }
+  @include Responsive(SM) {
+    padding: 48px 32px;
+  }
+  &__container {
+    .market__title {
+      font-size: 3.2rem;
+      line-height: 120%;
+      font-weight: 500;
+    }
+    .market__list {
+      display: flex;
+      justify-content: flex-start;
+      align-items: center;
+      flex-wrap: wrap;
+      .market__item {
+        text-align: center;
+        color: $black-color;
+        font-size: 1.6rem;
+        width: 20%;
+        margin-top: 55px;
+        font-weight: 400;
+        @include Responsive(LG) {
+          width: 33.33%;
+        }
+        @include Responsive(SM) {
+          width: 50%;
+        }
+        .market__image {
+          margin-bottom: 15px;
+          position: relative;
+          img {
+            width: 48px;
+            height: 48px;
+          }
+          &::after {
+            content: "";
+            display: block;
+            width: 48px;
+            height: 2px;
+            background-color: $grey-color;
+            opacity: 0.5;
+            position: absolute;
+            left: 50%;
+            bottom: -4px;
+            transform: translateX(-50%);
+            transition: 0.2s linear;
+          }
+          &:hover {
+            &::after {
+              opacity: 1;
+              background-color: $green-color;
+              transform: translateX(-50%) scaleX(1.6);
+            }
+          }
+        }
+      }
+    }
+  }
+}
