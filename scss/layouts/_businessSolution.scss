@@ -1,0 +1,98 @@
+.business-solution {
+  padding: 96px 32px;
+  background-color: #0c084d;
+  color: #fff;
+  @include Responsive(XL) {
+    padding: 64px 32px;
+  }
+  @include Responsive(LG) {
+    padding: 48px 32px;
+  }
+  &__container {
+    display: flex;
+    align-items: flex-start;
+    flex-wrap: wrap;
+    .business-solution__content {
+      width: 50%;
+      padding-right: 16%;
+      @include Responsive(XXL) {
+        padding-right: 10%;
+      }
+      @include Responsive(LG) {
+        width: 100%;
+        padding-bottom: 48px;
+      }
+      .business-solution__sub-title {
+        font-size: 2.6rem;
+        margin-bottom: 32px;
+        width: fit-content;
+        position: relative;
+        span {
+          font-weight: 600;
+        }
+        &::after {
+          content: "NEW";
+          display: block;
+          position: absolute;
+          top: 0;
+          right: -10px;
+          font-size: 1.1rem;
+          padding: 3px 7px 2px;
+          background-color: #584aff;
+          border-radius: 15px;
+          transform: translate(100%, 50%);
+        }
+      }
+      .business-solution__title {
+        font-size: 3.2rem;
+        line-height: 120%;
+        font-weight: 600;
+        margin-bottom: 24px;
+        max-width: 400px;
+        @include Responsive(LG) {
+          max-width: unset;
+        }
+        span {
+          font-family: $font-display;
+          font-style: italic;
+        }
+      }
+      .business-solution__text {
+        font-size: 1.8rem;
+        line-height: 26px;
+        margin-bottom: 32px;
+      }
+      .business-solution__list {
+        .business-solution__item {
+          display: flex;
+          align-items: flex-start;
+          margin-bottom: 12px;
+          i {
+            font-size: 2.4rem;
+            margin-right: 10px;
+            color: $grey-color;
+          }
+          p {
+            font-size: 1.6rem;
+            line-height: 24px;
+          }
+        }
+      }
+      .btn {
+        margin-top: 48px;
+        padding: 8px 24px;
+        font-size: 1.6rem;
+        font-weight: 400;
+      }
+    }
+    .business-solution__images {
+      width: 50%;
+      @include Responsive(LG) {
+        width: 100%;
+      }
+      img {
+        width: 100%;
+      }
+    }
+  }
+}
