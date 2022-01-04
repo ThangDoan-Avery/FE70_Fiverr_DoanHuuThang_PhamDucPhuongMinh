@@ -1,10 +1,477 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Document</title>
+    <title>Title</title>
+    <!-- Required meta tags -->
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1, shrink-to-fit=no"
+    />
+    <!-- Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,400;0,500;1,500&family=Roboto:wght@100;300;400;500;700;900&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Fontawesome -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      integrity="sha512-1ycn6IcaQQ40/MKBW2W4Rhis/DbILU74C1vSrLJxCq57o941Ym01SwNsOMqvEBFlcgUa6xLiPY/NS5R+E6ztJQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Slick -->
+    <link rel="stylesheet" href="./lib/slick/slick.css" />
+    <link rel="stylesheet" href="./lib/slick/slick-theme.css" />
+    <!-- Bootstrap CSS -->
+    <link
+      rel="stylesheet"
+      href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+      integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
+      crossorigin="anonymous"
+    />
+    <!-- Animation -->
+    <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/app.css" />
   </head>
-  <body></body>
+  <body>
+    <!-- START HEADER -->
+    <header class="header">
+      <div class="header-top">
+        <div class="header-top__container container-fluid">
+          <div class="header__toggle-menu">
+            <i class="fas fa-bars"></i>
+          </div>
+          <div class="header__logo">
+            <a href="#">fiverr<span>.</span></a>
+          </div>
+          <div class="header__search-input">
+            <i class="fas fa-search"></i>
+            <input type="text" placeholder="Find Services" />
+            <button class="btn btn--contained">Search</button>
+          </div>
+          <div class="header__options">
+            <div class="header__options--link header__options--active">
+              <a href="#">Fiverr Business</a>
+            </div>
+            <div class="header__options--explore">
+              <span>Explore</span>
+              <ul>
+                <li>
+                  <h6>Discover</h6>
+                  <p>Inspiring projects made on Fiverr</p>
+                </li>
+                <li>
+                  <h6>Community</h6>
+                  <p>Connect with Fiverr’s team and community</p>
+                </li>
+                <li>
+                  <h6>Guides</h6>
+                  <p>In-depth guides covering business topics</p>
+                </li>
+                <li>
+                  <h6>Podcast</h6>
+                  <p>Inside tips from top business minds</p>
+                </li>
+                <li>
+                  <h6>Learn</h6>
+                  <p>Professional online courses, led by experts</p>
+                </li>
+                <li>
+                  <h6>Blog</h6>
+                  <p>News, information and community stories</p>
+                </li>
+                <li>
+                  <h6>Logo Maker</h6>
+                  <p>Create your logo instantly</p>
+                </li>
+              </ul>
+            </div>
+            <div class="header__options--languages">
+              <span><i class="fas fa-globe-europe"></i> English</span>
+              <ul>
+                <li class="active">English</li>
+                <li>Deutsch</li>
+                <li>Español</li>
+                <li>Español</li>
+                <li>Português</li>
+                <li>Italiano</li>
+                <li>Nederlands</li>
+              </ul>
+            </div>
+            <div class="header__options--cash">
+              <span>$ USD</span>
+              <ul>
+                <li class="active">
+                  <h6>United States Dollar</h6>
+                  <p>USD - $</p>
+                </li>
+                <li>
+                  <h6>Euro</h6>
+                  <p>EUR - €</p>
+                </li>
+                <li>
+                  <h6>British Pound</h6>
+                  <p>GBP - £</p>
+                </li>
+                <li>
+                  <h6>Australian Dollar</h6>
+                  <p>AUD - A$</p>
+                </li>
+                <li>
+                  <h6>Canadian Dollar</h6>
+                  <p>CAD - CA$</p>
+                </li>
+                <li>
+                  <h6>Israeli Shekel</h6>
+                  <p>ILS - ₪</p>
+                </li>
+                <li>
+                  <h6>Brazilian Real</h6>
+                  <p>BRL - R$</p>
+                </li>
+                <li>
+                  <h6>Hong Kong Dollar</h6>
+                  <p>HKD - HK$</p>
+                </li>
+                <li>
+                  <h6>Swedish Krona</h6>
+                  <p>SEK - SEK</p>
+                </li>
+              </ul>
+            </div>
+            <div class="header__options--link">
+              <a href="#">Become a Seller</a>
+            </div>
+            <div class="header__options--link">
+              <a href="#">Sign in</a>
+            </div>
+            <div class="header__options--link">
+              <a href="#" class="btn btn--light">Join</a>
+            </div>
+          </div>
+        </div>
+        <div class="header__search-plus">
+          <i class="fas fa-search"></i>
+          <input type="text" placeholder="Find Services" />
+        </div>
+      </div>
+    </header>
+    <!-- END HEADER -->
+    <!-- START MENU ON TABLET AND PHONE -->
+    <section class="menu-phone">
+      <div class="overlay"></div>
+      <div class="menu-phone__main">
+        <button class="btn btn--contained">Join Fiverr</button>
+        <a href="#">Sign in</a>
+        <div class="menu-phone__item arrow">
+          <h6>Browse Categories</h6>
+          <ul class="menu-phone__nav">
+            <li>Graphics & Design</li>
+            <li>Digital Marketing</li>
+            <li>Writing & Translation</li>
+            <li>Video & Animation</li>
+            <li>Music & Audio</li>
+            <li>Programming & Tech</li>
+            <li>Business</li>
+            <li>Lifestyle</li>
+            <li>Trending</li>
+          </ul>
+        </div>
+        <div class="menu-phone__item arrow">
+          <h6>Explore</h6>
+          <ul class="menu-phone__nav">
+            <li>Discover</li>
+            <li>Guides</li>
+            <li>Learn</li>
+            <li>Logo Maker</li>
+            <li>Community</li>
+            <li>Postcast</li>
+            <li>Blog</li>
+          </ul>
+        </div>
+        <a href="#" class="green-color">Fiverr Pro</a>
+        <a href="#" class="green-color">Fiverr Bussiness</a>
+        <h5>General</h5>
+        <a href="#">Home</a>
+        <div class="menu-phone__item arrow">
+          <h6>English <i class="fas fa-globe-europe"></i></h6>
+          <ul class="menu-phone__nav m-0">
+            <li>English</li>
+            <li>Deutsch</li>
+            <li>Español</li>
+            <li>Español</li>
+            <li>Português</li>
+            <li>Italiano</li>
+            <li>Nederlands</li>
+          </ul>
+        </div>
+        <div class="menu-phone__item arrow">
+          <h6>$ USD</i></h6>
+          <ul class="menu-phone__nav">
+            <li>USD - $</li>
+            <li>EUR - €</li>
+            <li>GBP - £</li>
+            <li>AUD - A$</li>
+            <li>CAD - CA$</li>
+            <li>ILS - ₪</li>
+            <li>BRL - R$</li>
+            <li>HKD - HK$</li>
+            <li>SEK - SEK</li>
+            <li>NZD - NZ$</li>
+            <li>SGD - SGD</li>
+          </ul>
+        </div>
+        <a href="#">Open in App</a>
+      </div>
+    </section>
+    <!-- END MENU ON TABLET AND PHONE -->
+    <!-- BANNER -->
+    <section class="banner">
+      <div class="banner__content">
+        <img src="./images/selling/bg-mobile-first-hero-x2.jpg" alt="" class="banner__image">
+        <video
+          autoplay="autoplay"
+          muted="muted"
+          loop="loop"
+          class="banner-video"
+        >
+          <source src="./images/selling/covervideo.mp4" type="video/mp4" />
+        </video>
+        <!-- The header content -->
+        <div class="banner-info d-flex h-100 text-center align-items-center">
+          <div class="w-100 text-white">
+            <h1 class="display-3 animate__animated animate__fadeIn">Work Your Way</h1>
+            <p class="lead mb-0 animate__animated animate__fadeIn animate__delay-1s">
+              You bring the skill. We'll make earning easy.
+            </p>
+            <a href="#" class="btn btn-light animate__animated animate__fadeIn animate__delay-2s">Become a Seller</a>
+          </div>
+        </div>
+        <div class="banner__number">
+          <div class="banner__number--all">
+            <div class="row banner__items animate__animated animate__fadeIn">
+              <div class="col-4">
+                <p>A Gig is Bought Every</p>
+                <strong>4 SEC</strong>
+              </div>
+              <div class="col-4">
+                <p>Transactions</p>
+                <strong>50M+</strong>
+              </div>
+              <div class="col-4 ">
+                <p>Price Range</p>
+                <strong>$5 - $10,000</strong>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="banner__number-mobile">
+        <div class="banner__number--all">
+          <div class="banner__items animate__animated animate__fadeIn">
+            <div class="banner__item--mobile">
+              <p>A Gig is Bought Every</p>
+              <strong>4 SEC</strong>
+            </div>
+            <div class="banner__item--mobile">
+              <p>Transactions</p>
+              <strong>50M+</strong>
+            </div>
+            <div class="banner__item--mobile">
+              <p>Price Range</p>
+              <strong>$5 - $10,000</strong>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END BANNER -->
+    <!-- OUR FREELANCE -->
+    <section class="our-freelance">
+      <div class="our-freelance__main">
+        <h2>Join Our Growing Freelance Community</h2>
+        <div class="row freelance-people">
+           <div class=" freelance-people__person designer">
+            <h6>I am <br>a Designer</h6>
+           </div>
+           <div class=" freelance-people__person developer">
+            <h6>I am <br>a Developer</h6>
+          </div>
+          <div class=" freelance-people__person writer">
+            <h6>I am <br>a Writer</h6>
+          </div>
+          <div class=" freelance-people__person editor">
+            <h6>I am <br>a Video Editor</h6>
+          </div>
+          <div class=" freelance-people__person musician">
+            <h6>I am <br>a Musician</h6>
+          </div>
+          <div class=" freelance-people__person artist">
+            <h6>I am <br>a Voiceover Artist</h6>
+          </div>
+          <div class=" freelance-people__person media">
+            <h6>I am <br>a Social Media <br>Marketer</h6>
+          </div>
+          <div class=" my-skill">
+            <div class="my-skill--content">
+              <i class="fas fa-heart"></i>
+              <h3>What's <br>Your Skill</h3>
+              <a href="#" class="btn btn-light btn-myskill">Become a Seller</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="our-freelance__mobile">
+        <div class="our-freelance__mobile--content">
+          <div class=" freelance-people__person designer">
+            <h6>I am <br>a Designer</h6>
+            <a href="" class="btn-more">
+              See Statistics
+            </a>
+           </div>
+           <div class=" freelance-people__person developer">
+            <h6>I am <br>a Developer</h6>
+            <a href="" class="btn-more">
+              See Statistics
+            </a>
+          </div>
+          <div class=" freelance-people__person writer">
+            <h6>I am <br>a Writer</h6>
+            <a href="" class="btn-more">
+              See Statistics
+            </a>
+          </div>
+          <div class=" freelance-people__person editor">
+            <h6>I am <br>a Video Editor</h6>
+            <a href="" class="btn-more">
+              See Statistics
+            </a>
+          </div>
+          <div class=" freelance-people__person musician">
+            <h6>I am <br>a Musician</h6>
+            <a href="" class="btn-more">
+              See Statistics
+            </a>
+          </div>
+          <div class=" freelance-people__person artist">
+            <h6>I am <br>a Voiceover Artist</h6>
+            <a href="" class="btn-more">
+              See Statistics
+            </a>
+          </div>
+          <div class=" freelance-people__person media">
+            <h6>I am <br>a Social Media Marketer</h6>
+            <a href="" class="btn-more">
+              See Statistics
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END OUR FREELANCE -->
+    <!-- WORKS -->
+    <section class="works">
+      <div class="work__all">
+        <h2>How It Works</h2>
+        <div class="row work__content">
+          <div class="col-lg-4 col-md-12 work__item create-gig">
+            <h3>
+              1. Create A Gig
+            </h3>
+            <p>Sign up for free, set up your Gig, and offer your work to our global audience.</p>
+          </div>
+          <div class="col-lg-4 col-md-12 work__item deliver">
+            <h3>
+              2. Deliver Great Work
+            </h3>
+            <p>Get notified when you get an order and use our system to discuss details with customers.</p>
+          </div>
+          <div class="col-lg-4 col-md-12 work__item get-paid">
+            <h3>
+              3. Get Paid
+            </h3>
+            <p>Get paid on time, every time. Payment is transferred to you upon order completion.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- END WORKS -->
+    <!-- LEARN -->
+    <!-- <section class="learn">
+      <div class="learn__all">
+        <div class="row">
+          <div class="col-lg-6 col-md-12">
+            <i class="learn-more-logo"></i>
+            <h2>On-demand professional courses, led by the world’s leading experts.</h2>
+            <p>Discover what it takes to be a top-notch seller on Fiverr with this complimentary Learn from Fiverr course.</p>
+            <a href="#" class="btn btn-light btn-myskill">Become a Seller</a>
+          </div>
+          <div class="col-lg-6 col-md-12">
+            
+          </div>
+        </div>
+      </div>
+    </section> -->
+    <!-- END LEARN -->
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+      integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+      crossorigin="anonymous"
+    ></script>
+    <!-- Slick -->
+    <script src="./lib/slick/slick.min.js"></script>
+    <script>
+      // when click carousel, slide is not autoplay
+      // This is solution, slide is autoplay when click other window/tab
+      $("#latest-news-wrapper").on(
+        "beforeChange",
+        function (event, slick, currentSlide, nextSlide) {
+          $("#latest-news-wrapper .slick-dots li")
+            .removeClass("slick-active")
+            .attr("aria-hidden", "true");
+          $("#latest-news-wrapper .slick-dots li button").focus(function () {
+            this.blur();
+          });
+        }
+      );
+
+      $(document).ready(function () {
+        $(".our-freelance__mobile--content").slick({
+          infinite: true,
+          speed: 500,
+          // fade: true,
+          // cssEase: "linear",
+          autoplay: true,
+
+          dots: true,
+          // infinite: true,
+          // speed: 300,
+          // slidesToShow: 1,
+          // adaptiveHeight: true
+        });
+      });
+    </script>
+    <!-- JS -->
+    <script src="./js/home.js"></script>
+  </body>
 </html>

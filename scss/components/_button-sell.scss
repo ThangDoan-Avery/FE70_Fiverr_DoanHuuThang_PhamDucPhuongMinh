@@ -1,0 +1,41 @@
+.btn {
+  font-weight: 700;
+  border: 1px solid transparent;
+  margin: 0;
+  border-radius: 4px;
+  box-sizing: border-box;
+  transition: 0.2s linear;
+  border: 1px solid $primary-main;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.btn-light {
+  background-color: $primary-main;
+  color: $white;
+  padding: 15px 35px;
+  font-size: 16px;
+  margin: 15px 8px 0;
+  &:hover {
+    color: $white;
+    background-color: $primary-light;
+  }
+}
+
+.btn--contained {
+  background-color: $primary-main;
+  color: $white;
+  &:hover {
+    background-color: #19a463;
+    color: #fff;
+  }
+}
+
+.btn--light {
+  color: $primary-main;
+  &:hover {
+    color: $white;
+    background-color: $primary-main;
+  }
+}

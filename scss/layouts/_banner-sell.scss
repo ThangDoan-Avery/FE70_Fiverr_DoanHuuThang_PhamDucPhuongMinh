@@ -1,0 +1,121 @@
+.banner {
+  position: relative;
+  background-color: $black;
+  overflow: hidden;
+  .banner__number-mobile {
+    background-color: $white;
+    color: #62646a;
+    .banner__number--all {
+      width: 100%;
+      padding: 25px 0;
+      display: none;
+      @include Responsive(LG) {
+        display:block;
+      }
+      .banner__items {
+        text-align: center;
+        .banner__item--mobile {
+          padding: 12px 0 13px;
+          p {
+            font-size: 16px;
+            line-height: 30px;
+          }
+          strong {
+            font: 400 36px macan,helvetica neue,Helvetica,Arial,sans-serif;
+          }
+        }
+      }
+    }
+  }
+  &__content {
+    height: 580px;
+    position: relative;
+    img.banner__image {
+      width: 100%;
+      opacity: 0.9;
+      object-fit: cover;
+      height: 580px;
+      display: none;
+      @include Responsive(LG) {
+        display:block;
+      }
+    }
+    video.banner-video {
+      width: 100%;
+      object-fit: cover;
+      height: 580px;
+      @include Responsive(LG) {
+        display:none;
+      }
+    }
+    .banner-info {
+      position: absolute;
+      z-index: 5;
+      top: 50%;
+      left: 0;
+      width: 100%;
+      text-align: center;
+      transform: translateY(-50%);
+      @include Responsive(LG) {
+        padding: 0 40px;
+      }
+      h1 {
+        font-size: 50px;
+        line-height: 110%;
+        font-weight: 700;
+        max-width: 750px;
+        margin: 0 auto;
+        @include Responsive(LG) {
+          font-size: 23px;
+        }
+      }
+      p {
+        font-weight: 300;
+        font-size: 24px;
+        line-height: 32px;
+        max-width: 750px;
+        margin: 5px auto 15px;
+        @include Responsive(LG) {
+          font-size: 16px;
+          font-weight: 400;
+        }
+      }
+      a {
+        margin: 15px 8px 0;
+      @include Responsive(LG) {
+        width: 100%;
+        padding: 10px 20px;
+        margin: 15px 0;
+      }
+      }
+    }
+    .banner__number {
+      background-color: rgba(255,255,255,.3);
+      width: 100%;
+      padding: 25px 0;
+      position: absolute;
+      z-index: 100;
+      color: $white;
+      bottom: 0;
+      @include Responsive(LG) {
+        display:none;
+      }
+      &--all{
+        margin: 0 auto;
+        position: relative;
+        .banner__items {
+          justify-content: space-around;
+          align-items: center;
+          text-align: center;
+          p {
+            font-size: 22px;
+            line-height: 30px;
+          }
+          strong {
+            font: 400 45px macan,helvetica neue,Helvetica,Arial,sans-serif;
+          }
+        }
+      }
+    }
+  }
+}

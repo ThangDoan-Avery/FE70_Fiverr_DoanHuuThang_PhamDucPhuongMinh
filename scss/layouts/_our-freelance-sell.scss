@@ -1,0 +1,241 @@
+.our-freelance {
+  overflow: hidden;
+  &__main {
+    margin: 0 22px 20px 22px;
+    @include Responsive(LG) {
+      display: none;
+    }
+    h2 {
+      padding: 30px 0;
+      text-align: center;
+      font-weight: 700;
+      font-size: 32px;
+    }
+    .freelance-people {
+      margin: 0 50px;
+      .my-skill {
+        text-align: center;
+        box-sizing: border-box;
+        transition: all 1s;
+        width: 23%;
+        margin: 0 2% 2% 0;
+        position: relative;
+        cursor: pointer;
+        background-color: #eee;
+        &--content {
+          position: absolute;
+          z-index: 3;
+          top: 50%;
+          width: 100%;
+          transform: translateY(-50%);
+        }
+        i {
+          background-size: 350px;
+          display: block;
+          color: #e64f4f;
+          font-size: 29px;
+        }
+        h3 {
+          font-size: 32px;
+          line-height: 34px;
+          font-weight: 400;
+          color: #555;
+        }
+        .btn-myskill {
+          padding: 15px 35px;
+          @include Responsive(XL) {
+            padding: 10px 25px;
+          }
+        }
+      }
+      h6 {
+        font-size: 24px;
+        line-height: 25px;
+        font-weight: 700;
+        color: $white;
+        position: absolute;
+        left: 15px;
+        bottom: 15px;
+        z-index: 1;
+        transition: opacity .3s;
+      }
+      &__person {
+        box-sizing: border-box;
+        transition: all 1s;
+        width: 23%;
+        margin: 0 2% 2% 0;
+        position: relative;
+        cursor: pointer;
+        height: 305px;
+        cursor: pointer;
+        background-repeat: no-repeat;
+        background-position: center center;
+        background-size: cover;
+        transition: opacity 0.3s;
+        &:hover::before {
+          opacity: 0 !important;
+          transition: opacity 0.3s;
+        };
+        &::before {
+          content: '';
+          background: #1f1f1f;
+          opacity: .1;
+          position: absolute;
+          z-index: 2;
+          left: 0;
+          right: 0;
+          top: 0;
+          bottom: 0;
+          pointer-events: none;
+          transition: opacity .3s;
+        }
+      }
+      .designer {
+        background-image: url("../../images/selling/designer.jpg");
+        background-size: 100%;
+        transition: background-size 1s;
+        &:hover {
+          background-size: 105%;
+          transition: background-size 1s;
+        };
+      }
+      .developer {
+        background-image: url("../../images/selling/developer.jpg");
+        background-size: 100%;
+        transition: background-size 1s;
+        &:hover {
+          background-size: 105%;
+          transition: background-size 1s;
+        };
+      }
+      .writer {
+        background-image: url("../../images/selling/writer.jpg");
+        background-position: 50% 50%;
+        transition: background-position 1s;
+        &:hover {
+          background-position: 45% 0;
+          transition: background-position 1s;
+        };
+      }
+      .editor {
+        background-image: url("../../images/selling/video.jpg");
+        background-size: 100%;
+        transition: background-size 1s;
+        &:hover {
+          background-size: 105%;
+          transition: background-size 1s;
+        };
+      }
+      .musician {
+        background-image: url("../../images/selling/musician.jpg");
+        background-size: 100%;
+        transition: background-size 1s;
+        &:hover {
+          background-size: 105%;
+          transition: background-size 1s;
+        };
+      }
+      .artist {
+        background-image: url("../../images/selling/voiceover.jpg");
+        background-size: 100%;
+        transition: background-size 1s;
+        &:hover {
+          background-size: 105%;
+          transition: background-size 1s;
+        };
+      }
+      .media {
+        background-image: url("../../images/selling/analyst.jpg");
+        background-position: 50% 50%;
+        transition: background-position 1s;
+        &:hover { 
+          background-position: 45% 0;
+          transition: background-position 1s;
+        };
+      }
+    }
+  }
+  &__mobile {
+    display: none;
+    @include Responsive(LG) {
+      display: block;
+    }
+    .slick-dots li button {
+      font-size: 0;
+      line-height: 0;
+      width: 17px;
+      height: 17px;
+      cursor: pointer;
+      color: transparent;
+      border: 1px solid $white;
+      border-radius: 50%;
+      outline: none;
+      background: none;
+    }
+    .slick-dots li button:before {
+      color: transparent;
+    }
+    .slick-dots {
+      bottom: 10px;
+    }
+    .slick-dots li button:before {
+      font-size: 20px;
+    }
+    .slick-dots li.slick-active button:before {
+      color: $white;
+      opacity: 1;
+    }
+    &--content {
+      .freelance-people__person {
+        position: relative;
+        height: 235px;
+        background-size: cover;
+        background-position: center center;
+        h6 {
+          position: absolute;
+          z-index: 10;
+          top: 15px;
+          left: 15px;
+          font-size: 20px;
+          line-height: 22px;
+          font-weight: 700;
+          color: #fff;
+          text-align: left;
+        }
+        .btn-more {
+          background: rgba(0,0,0,.7);
+          position: absolute;
+          z-index: 20;
+          right: 15px;
+          top: 15px;
+          font-size: 14px;
+          color: #fff;
+          text-transform: capitalize;
+          padding: 10px 20px;
+          border-radius: 5px;
+        }
+      }
+      .designer {
+        background-image: url("../../images/selling/designer.jpg");
+      }
+      .developer {
+        background-image: url("../../images/selling/developer.jpg");
+      }
+      .writer {
+        background-image: url("../../images/selling/writer.jpg");
+      }
+      .editor {
+        background-image: url("../../images/selling/video.jpg");
+      }
+      .musician {
+        background-image: url("../../images/selling/musician.jpg");
+      }
+      .artist {
+        background-image: url("../../images/selling/voiceover.jpg");
+      }
+      .media {
+        background-image: url("../../images/selling/analyst.jpg");
+      }
+    }
+  }
+}
