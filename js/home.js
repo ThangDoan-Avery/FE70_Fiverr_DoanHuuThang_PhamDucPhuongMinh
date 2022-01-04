@@ -71,6 +71,26 @@ $(document).ready(function () {
   });
 });
 
+// Event header when window scroll
+const header = document.querySelector(".header");
+const headerInputSearch = document.querySelector(".header__search-input");
+const headerBottom = document.querySelector(".header-bottom");
+window.onscroll = () => {
+  let heightScroll = window.scrollY;
+  if (heightScroll > 0) {
+    header.classList.remove("header--transparent");
+    if (heightScroll > 200) {
+      headerBottom.classList.remove("close");
+      headerInputSearch.classList.remove("close");
+    } else {
+      headerBottom.classList.add("close");
+      headerInputSearch.classList.add("close");
+    }
+  } else {
+    header.classList.add("header--transparent");
+  }
+};
+
 // Popup Menu
 const menuPhoneItems = document.querySelectorAll(".menu-phone__item");
 const menuToggle = document.querySelector(".header__toggle-menu");

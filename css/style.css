@@ -216,6 +216,17 @@ html {
   z-index: 2;
 }
 
+.header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: #fff;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
+}
+
 .header-top {
   color: #404145;
   padding: 25px 32px;
@@ -287,6 +298,11 @@ html {
   font-size: 4.5rem;
 }
 
+.header-top__container .header__search-input.close {
+  opacity: 0;
+  visibility: hidden;
+}
+
 .header-top__container .header__search-input {
   position: relative;
   width: 30%;
@@ -296,6 +312,10 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+  opacity: 1;
+  visibility: visible;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
 }
 
 @media only screen and (max-width: 1284px) {
@@ -479,6 +499,7 @@ html {
   font-size: 1.6rem;
   font-weight: 300;
   margin-bottom: 8px;
+  color: #404145;
 }
 
 .header-top__container .header__options .header__options--explore ul li p {
@@ -574,6 +595,7 @@ html {
   padding: 12px 0 12px 48px;
   position: relative;
   font-size: 1.6rem;
+  color: #404145;
   cursor: pointer;
 }
 
@@ -663,6 +685,7 @@ html {
   font-size: 1.6rem;
   font-weight: 300;
   margin-bottom: 8px;
+  color: #404145;
 }
 
 .header-top__container .header__options .header__options--cash ul li p {
@@ -703,6 +726,10 @@ html {
 
 .header-bottom {
   padding: 0 32px;
+  border-bottom: 1px solid #e4e5e7;
+  overflow: hidden;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
 }
 
 @media only screen and (max-width: 1284px) {
@@ -744,6 +771,33 @@ html {
 
 .header-bottom .nav__container .nav__list .nav__item:hover::after {
   display: block;
+}
+
+.header-bottom.close {
+  height: 0;
+  border: none;
+}
+
+.header--transparent {
+  background-color: transparent;
+}
+
+.header--transparent .header-top {
+  color: #fff;
+  border: none;
+}
+
+.header--transparent .header-top .header-top__container .header__options {
+  color: #fff;
+}
+
+.header--transparent .header-top .header-top__container .header__options .header__options--link .btn {
+  color: #fff;
+  border-color: #fff;
+}
+
+.header--transparent .header-top .header-top__container .header__options .header__options--link .btn:hover {
+  border-color: #1dbf73;
 }
 
 .menu-phone {
