@@ -61,6 +61,14 @@ $(document).ready(function () {
       },
     ],
   });
+
+  $(".testimonial__list").slick({
+    dots: true,
+    speed: 300,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    infinite: true,
+  });
 });
 
 // Popup Menu
@@ -107,14 +115,16 @@ menuOverlay.onclick = () => {
 const thumbnailVideoBenefit = document.querySelector(
   ".benefit__thumnail-video"
 );
+const thumbnailVideoTestimonial = document.querySelectorAll(
+  ".testimonial__thumbnail-video"
+);
 const popupVideo = document.querySelector(".popup-video");
 const videoTag = document.querySelector(".popup-video .popup-video__video");
-let srcVideo;
 const popupVideoOverlay = document.querySelector(
   ".popup-video .popup-video__overlay"
 );
 
-const openPopupVideo = () => {
+const openPopupVideo = (srcVideo) => {
   popupVideo.style.opacity = "1";
   popupVideo.style.visibility = "visible";
   videoTag.setAttribute("src", srcVideo);
@@ -122,9 +132,16 @@ const openPopupVideo = () => {
 };
 
 thumbnailVideoBenefit.onclick = (e) => {
-  srcVideo = thumbnailVideoBenefit.getAttribute("data-srcVideo");
-  openPopupVideo();
+  let srcVideo = thumbnailVideoBenefit.getAttribute("data-srcVideo");
+  openPopupVideo(srcVideo);
 };
+
+thumbnailVideoTestimonial.forEach((thumbnail) => {
+  thumbnail.onclick = () => {
+    let srcVideo = thumbnail.getAttribute("data-srcVideo");
+    openPopupVideo(srcVideo);
+  };
+});
 
 popupVideoOverlay.onclick = () => {
   popupVideo.style.opacity = "0";
