@@ -1,0 +1,221 @@
+.testimonial {
+  padding: 96px 32px;
+  @include Responsive(LG) {
+    padding: 80px 32px;
+  }
+  @include Responsive(SM) {
+    padding: 48px 32px;
+  }
+  &__container {
+    .testimonial__feedback {
+      .testimonial__list {
+        .slick-dots {
+          display: none !important;
+        }
+        .slick-arrow {
+          width: 48px;
+          height: 48px;
+          box-shadow: 0 2px 5px 0 #00000026;
+          background-color: #fff;
+          border-radius: 100%;
+          z-index: 2;
+          &::before {
+            color: #000;
+            opacity: 1;
+            width: 48px;
+            height: 48px;
+          }
+        }
+        .slick-arrow.slick-prev {
+          left: -24px;
+          &::before {
+            content: "\f053";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+          }
+        }
+        .slick-arrow.slick-next {
+          right: -24px;
+          &::before {
+            content: "\f054";
+            font-family: "Font Awesome 5 Free";
+            font-weight: 900;
+          }
+        }
+        .testimonial__item {
+          display: flex;
+          align-items: center;
+          flex-wrap: wrap;
+          .testimonial__thumbnail-video {
+            width: 40%;
+            position: relative;
+            cursor: pointer;
+            @include Responsive(LG) {
+              width: 100%;
+            }
+            img {
+              width: 100%;
+              border-radius: 4px;
+            }
+            &::after {
+              content: "\f04b";
+              font-family: "Font Awesome 5 Free";
+              font-weight: 900;
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              position: absolute;
+              top: 50%;
+              left: 50%;
+              transform: translate(-50%, -50%);
+              height: 80px;
+              width: 80px;
+              color: #fff;
+              font-size: 3rem;
+              background-color: #00000070;
+              border-radius: 50%;
+            }
+          }
+          .testimonial__content {
+            width: 60%;
+            padding: 0 48px 0 64px;
+            @include Responsive(LG) {
+              width: 100%;
+              margin-top: 24px;
+              padding-right: 0;
+              padding-left: 0;
+            }
+            .testimonial__customer {
+              display: flex;
+              align-items: flex-start;
+              margin-bottom: 16px;
+              @include Responsive(LG) {
+                flex-direction: column;
+              }
+              span {
+                font-size: 2rem;
+                line-height: 3rem;
+                color: $grey-color;
+                font-weight: 300;
+                margin-right: 20px;
+                position: relative;
+                &:after {
+                  content: "";
+                  display: block;
+                  width: 1px;
+                  height: 24px;
+                  background-color: #c5c6c9;
+                  position: absolute;
+                  right: -20px;
+                  top: 50%;
+                  transform: translateY(-50%);
+                  @include Responsive(LG) {
+                    display: none;
+                  }
+                }
+              }
+              img {
+                height: 36px;
+                margin-left: 20px;
+                @include Responsive(LG) {
+                  margin-left: 0;
+                }
+              }
+            }
+            .testimonial__text {
+              font-size: 3rem;
+              line-height: 4.4rem;
+              font-family: $font-display;
+              font-style: italic;
+            }
+          }
+        }
+      }
+    }
+    .testimonial__banner {
+      display: flex;
+      align-items: center;
+      padding: 36px 0 36px 72px;
+      background: $blue-color url(../../images/home-pic-2.png);
+      background-size: cover;
+      background-position-y: center;
+      margin-top: 96px;
+      @include Responsive(LG) {
+        margin-top: 80px;
+        background: $blue-color;
+        padding: 80px 32px;
+        align-items: flex-start;
+        flex-direction: column;
+      }
+      @include Responsive(SM) {
+        margin-top: 48px;
+        padding: 48px 32px;
+      }
+      .testimonial__banner__content {
+        color: #fff;
+        .testimonial__banner__sub-title {
+          font-size: 2.6rem;
+          margin-bottom: 16px;
+          width: fit-content;
+          span {
+            font-weight: 600;
+          }
+        }
+        .testimonial__banner__title {
+          font-size: 3.2rem;
+          line-height: 120%;
+          font-weight: 600;
+          margin-bottom: 8px;
+          max-width: 350px;
+          span {
+            font-family: $font-display;
+            font-style: italic;
+            font-weight: 300;
+          }
+        }
+        .testimonial__banner__text {
+          font-size: 1.6rem;
+          margin-bottom: 24px;
+          font-weight: 300;
+          line-height: 2.4rem;
+        }
+        .btn {
+          color: $blue-color;
+          background-color: #fff;
+          border: none;
+          padding: 9px 32px;
+          font-size: 1.6rem;
+          font-weight: 400;
+          transition: 0.2s linear;
+          &:hover {
+            background-color: #d4defb;
+          }
+        }
+      }
+      .testimonial__banner__image {
+        width: 100%;
+        height: 200px;
+        display: none;
+        position: relative;
+        @include Responsive(LG) {
+          display: block;
+        }
+        @include Responsive(SM) {
+          height: 125px;
+        }
+        @include Responsive(SM) {
+          height: 100px;
+        }
+        img {
+          position: absolute;
+          bottom: -80px;
+          right: -32px;
+          width: 100%;
+          @include Responsive(SM) {
+            bottom: -48px;
+          }
+        }
+      }
+    }
+  }
+}
