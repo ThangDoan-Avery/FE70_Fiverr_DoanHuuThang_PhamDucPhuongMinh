@@ -69,6 +69,38 @@ $(document).ready(function () {
     slidesToScroll: 1,
     infinite: true,
   });
+
+  $(".project__list").slick({
+    dots: true,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    infinite: true,
+    responsive: [
+      {
+        breakpoint: 1059,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
 });
 
 // Event header when window scroll
