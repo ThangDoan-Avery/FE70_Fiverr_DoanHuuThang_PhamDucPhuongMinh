@@ -810,7 +810,7 @@ html {
   visibility: hidden;
   -webkit-transition: 0.2s linear;
   transition: 0.2s linear;
-  z-index: 998;
+  z-index: 999;
 }
 
 .menu-phone .overlay {
@@ -2195,5 +2195,184 @@ html {
 
 .project__container .project__list .project__item .project__text .project__paragraph p {
   color: #95979d;
+}
+
+.guides {
+  padding: 96px 32px;
+}
+
+@media only screen and (max-width: 960px) {
+  .guides {
+    padding: 80px 32px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .guides {
+    padding: 48px 32px;
+  }
+}
+
+.guides__container .guides-top {
+  position: relative;
+  margin-bottom: 96px;
+}
+
+@media only screen and (max-width: 960px) {
+  .guides__container .guides-top {
+    margin-bottom: 80px;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .guides__container .guides-top {
+    margin-bottom: 48px;
+  }
+}
+
+.guides__container .guides-top .guides__heading {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  margin-bottom: 24px;
+}
+
+.guides__container .guides-top .guides__heading .guides__title {
+  font-size: 3.2rem;
+  line-height: 120%;
+  font-weight: 500;
+}
+
+.guides__container .guides-top .guides__heading .guides__link-seemore {
+  font-size: 1.6rem;
+  color: #4974e7;
+  padding-right: 20px;
+  position: relative;
+}
+
+@media only screen and (max-width: 960px) {
+  .guides__container .guides-top .guides__heading .guides__link-seemore {
+    position: absolute;
+    left: 0px;
+    bottom: 0px;
+    -webkit-transform: translateY(100%);
+            transform: translateY(100%);
+  }
+}
+
+.guides__container .guides-top .guides__heading .guides__link-seemore::after {
+  content: "\f054";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  display: block;
+  font-size: 1rem;
+  color: inherit;
+  position: absolute;
+  top: 50%;
+  right: 0;
+  -webkit-transform: translateY(-50%);
+          transform: translateY(-50%);
+}
+
+.guides__container .guides-top .guides__list {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin: 0 -16px;
+}
+
+.guides__container .guides-top .guides__list .guides__item {
+  cursor: pointer;
+  width: 33.33%;
+  padding: 0 16px;
+  margin-bottom: 32px;
+}
+
+@media only screen and (max-width: 960px) {
+  .guides__container .guides-top .guides__list .guides__item {
+    width: 50%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .guides__container .guides-top .guides__list .guides__item {
+    width: 100%;
+  }
+}
+
+.guides__container .guides-top .guides__list .guides__item img {
+  width: 100%;
+  margin-bottom: 16px;
+}
+
+.guides__container .guides-top .guides__list .guides__item h6 {
+  font-size: 1.8rem;
+  line-height: 140%;
+  font-weight: 500;
+  margin-bottom: 2px;
+}
+
+.guides__container .guides-top .guides__list .guides__item p {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  color: #8d8e94;
+  font-weight: 300;
+}
+
+.guides__container .guides-bottom {
+  padding: 120px 96px;
+  background: url(../../images/home-pic-8.png);
+  background-size: cover;
+}
+
+@media only screen and (max-width: 1284px) {
+  .guides__container .guides-bottom {
+    background: url(../../images/home-pic-6.png) #4a0e20;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    padding: 80px 32px;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .guides__container .guides-bottom {
+    padding: 64px 32px;
+    background: #4a0e20;
+  }
+}
+
+@media only screen and (max-width: 960px) {
+  .guides__container .guides-bottom {
+    padding: 48px 24px;
+  }
+}
+
+.guides__container .guides-bottom h3 {
+  color: #fff;
+  font-size: 4.8rem;
+  line-height: 5.6rem;
+  font-weight: 500;
+  margin-bottom: 40px;
+  max-width: 610px;
+}
+
+.guides__container .guides-bottom h3 span {
+  font-family: "Playfair Display", serif;
+  font-style: italic;
+}
+
+.guides__container .guides-bottom .btn {
+  padding: 8px 24px;
+  font-size: 1.6rem;
+  font-weight: 400;
 }
 /*# sourceMappingURL=style.css.map */
