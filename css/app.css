@@ -802,7 +802,7 @@ html {
   visibility: hidden;
   -webkit-transition: 0.2s linear;
   transition: 0.2s linear;
-  z-index: 998;
+  z-index: 999;
 }
 
 .menu-phone .overlay {
@@ -1878,6 +1878,13 @@ html {
 
 .qanda__all {
   padding: 40px 100px;
+}
+
+@media only screen and (max-width: 992px) {
+  .qanda__all {
+    padding: 30px 15px 20px 15px;
+    background-color: #fff;
+  }
 }
 
 .qanda__all .qanda__header h2 {

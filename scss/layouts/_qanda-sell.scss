@@ -3,6 +3,10 @@
   margin: 0 auto;
   &__all {
     padding: 40px 100px;
+    @include Responsive(LGP) {
+      padding: 30px 15px 20px 15px;
+      background-color: $white;
+    }
     .qanda__header {
       h2 {
         padding-bottom: 30px;
