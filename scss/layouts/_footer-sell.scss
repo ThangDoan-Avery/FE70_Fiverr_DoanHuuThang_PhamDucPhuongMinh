@@ -58,6 +58,9 @@
               margin-top: 0;
               margin-left: 24px;
               color: #83868d;
+              @include Responsive(SM) {
+                margin-top: 12px;
+              }
               a {
                 color: #7a7d85;
                 white-space: nowrap;
@@ -71,6 +74,9 @@
               white-space: nowrap;
               margin-left: 24px;
               color: #b5b6ba;
+              @include Responsive(SM) {
+                margin-top: 12px;
+              }
             }
           }
         }
@@ -123,6 +129,9 @@
             line-height: 24px;
             justify-content: center;
             align-items: center;
+            @include Responsive(SM) {
+              margin-top: 5px;
+            }
             .option-money {
               .modal {
                 .modal-dialog {

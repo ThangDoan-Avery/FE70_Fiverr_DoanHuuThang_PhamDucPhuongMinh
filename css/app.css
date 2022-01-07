@@ -2089,6 +2089,12 @@ html {
   color: #83868d;
 }
 
+@media only screen and (max-width: 576px) {
+  .footer__bottom .bottom__all .left p .term {
+    margin-top: 12px;
+  }
+}
+
 .footer__bottom .bottom__all .left p .term a {
   color: #7a7d85;
   white-space: nowrap;
@@ -2104,6 +2110,12 @@ html {
   white-space: nowrap;
   margin-left: 24px;
   color: #b5b6ba;
+}
+
+@media only screen and (max-width: 576px) {
+  .footer__bottom .bottom__all .left p .copyright {
+    margin-top: 12px;
+  }
 }
 
 .footer__bottom .bottom__all .right {
@@ -2190,6 +2202,12 @@ html {
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
+}
+
+@media only screen and (max-width: 576px) {
+  .footer__bottom .bottom__all .right .right__options {
+    margin-top: 5px;
+  }
 }
 
 .footer__bottom .bottom__all .right .right__options .option-money .modal .modal-dialog .modal-content .modal-body {
