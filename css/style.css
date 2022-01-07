@@ -2148,8 +2148,8 @@ html {
 
 .project__container .project__list .project__item {
   margin: 0 18px;
-  -webkit-box-shadow: 0 0.14px 2.29266px #00000008, 0 0.37px 4.42626px #0000000d, 0 3px 7px #00000017;
-          box-shadow: 0 0.14px 2.29266px #00000008, 0 0.37px 4.42626px #0000000d, 0 3px 7px #00000017;
+  -webkit-box-shadow: 0 0.14px 2.29266px #00000008, 0 0.37px 4.42626px #0000000d, 0 3px 7px #00000017;
+          box-shadow: 0 0.14px 2.29266px #00000008, 0 0.37px 4.42626px #0000000d, 0 3px 7px #00000017;
   border-radius: 4px;
   overflow: hidden;
   cursor: pointer;
@@ -2374,5 +2374,246 @@ html {
   padding: 8px 24px;
   font-size: 1.6rem;
   font-weight: 400;
+}
+
+.footer {
+  padding: 64px 32px 0;
+  border-top: 2px solid #e4e5e7;
+}
+
+@media only screen and (max-width: 576px) {
+  .footer {
+    padding: 24px 32px 0;
+  }
+}
+
+.footer__container .footer__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  border-bottom: 2px solid #e4e5e7;
+}
+
+.footer__container .footer__menu .footer__list {
+  width: 20%;
+  padding-bottom: 40px;
+  position: relative;
+}
+
+@media only screen and (max-width: 960px) {
+  .footer__container .footer__menu .footer__list {
+    width: 33.33%;
+  }
+}
+
+@media only screen and (max-width: 576px) {
+  .footer__container .footer__menu .footer__list {
+    width: 100%;
+    padding-bottom: 0px;
+  }
+  .footer__container .footer__menu .footer__list::after {
+    content: "\f078";
+    display: block;
+    font-family: "Font Awesome 5 Free";
+    font-weight: 900;
+    font-size: 1.6rem;
+    color: #7a7d84;
+    position: absolute;
+    top: 0;
+    right: 0;
+  }
+}
+
+.footer__container .footer__menu .footer__list h6 {
+  font-size: 1.6rem;
+  line-height: 140%;
+  font-weight: 500;
+  padding-bottom: 20px;
+}
+
+.footer__container .footer__menu .footer__list ul {
+  overflow: hidden;
+}
+
+@media only screen and (max-width: 576px) {
+  .footer__container .footer__menu .footer__list ul {
+    height: 0;
+  }
+}
+
+.footer__container .footer__menu .footer__list ul .footer__item {
+  padding-bottom: 16px;
+  padding-right: 16px;
+}
+
+.footer__container .footer__menu .footer__list ul .footer__item a {
+  font-size: 1.6rem;
+  line-height: 2.4rem;
+  font-weight: 300;
+  color: #7a7d84;
+}
+
+.footer__container .footer__menu .footer__list ul .footer__item a:hover {
+  text-decoration: underline;
+}
+
+.footer__container .footer__infor {
+  margin: 24px 0;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: start;
+      -ms-flex-pack: start;
+          justify-content: flex-start;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  color: #7a7d84;
+}
+
+@media only screen and (max-width: 576px) {
+  .footer__container .footer__infor {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+.footer__container .footer__infor .footer__copywritter {
+  -webkit-box-flex: 1;
+      -ms-flex: 1;
+          flex: 1;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: baseline;
+      -ms-flex-align: baseline;
+          align-items: baseline;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+@media only screen and (max-width: 960px) {
+  .footer__container .footer__infor .footer__copywritter {
+    width: 100%;
+    -webkit-box-flex: 1;
+        -ms-flex: auto;
+            flex: auto;
+    margin-bottom: 10px;
+  }
+}
+
+.footer__container .footer__infor .footer__copywritter h3 {
+  font-size: 2.7rem;
+  line-height: 3rem;
+  font-weight: 600;
+}
+
+@media only screen and (max-width: 576px) {
+  .footer__container .footer__infor .footer__copywritter h3 {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.footer__container .footer__infor .footer__copywritter p {
+  font-size: 1.4rem;
+  line-height: 2.1rem;
+  word-spacing: 1px;
+  font-weight: 300;
+  margin-bottom: 4px;
+  margin-left: 10px;
+}
+
+@media only screen and (max-width: 576px) {
+  .footer__container .footer__infor .footer__copywritter p {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+.footer__container .footer__infor .footer__social-media {
+  margin-right: 24px;
+  margin-left: -10px;
+}
+
+@media only screen and (max-width: 576px) {
+  .footer__container .footer__infor .footer__social-media {
+    margin: auto;
+    margin-bottom: 10px;
+  }
+}
+
+.footer__container .footer__infor .footer__social-media a {
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 100%;
+  background-color: #fff;
+  margin-right: 10px;
+  color: inherit;
+}
+
+@media only screen and (max-width: 576px) {
+  .footer__container .footer__infor .footer__social-media a {
+    margin: 0 5px;
+  }
+}
+
+.footer__container .footer__infor .footer__social-media a i {
+  font-size: 2rem;
+}
+
+.footer__container .footer__infor .footer__social-media a:hover {
+  background-color: #efeff0;
+}
+
+.footer__container .footer__infor .footer__option span {
+  font-size: 1.6rem;
+  line-height: 24px;
+  padding: 8px 12px;
+  margin-right: 4px;
+  border-radius: 20px;
+  display: inline-block;
+  cursor: pointer;
+}
+
+@media only screen and (max-width: 576px) {
+  .footer__container .footer__infor .footer__option span {
+    margin-bottom: 20px;
+  }
+}
+
+.footer__container .footer__infor .footer__option span:hover {
+  background-color: #efeff0;
+}
+
+.footer__container .footer__infor .footer__option span:last-child {
+  border: 1px solid #7a7d84;
+  border-radius: 50%;
+  padding: 7px 13px;
+}
+
+.footer__container .footer__infor .footer__option span:last-child:hover {
+  border-color: #efeff0;
 }
 /*# sourceMappingURL=style.css.map */
