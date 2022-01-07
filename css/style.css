@@ -2148,8 +2148,8 @@ html {
 
 .project__container .project__list .project__item {
   margin: 0 18px;
-  -webkit-box-shadow: 0 0.14px 2.29266px #00000008, 0 0.37px 4.42626px #0000000d, 0 3px 7px #00000017;
-          box-shadow: 0 0.14px 2.29266px #00000008, 0 0.37px 4.42626px #0000000d, 0 3px 7px #00000017;
+  -webkit-box-shadow: 0 0.14px 2.29266px #00000008, 0 0.37px 4.42626px #0000000d, 0 3px 7px #00000017;
+          box-shadow: 0 0.14px 2.29266px #00000008, 0 0.37px 4.42626px #0000000d, 0 3px 7px #00000017;
   border-radius: 4px;
   overflow: hidden;
   cursor: pointer;
@@ -2426,6 +2426,8 @@ html {
     position: absolute;
     top: 0;
     right: 0;
+    -webkit-transition: 0.2s linear;
+    transition: 0.2s linear;
   }
 }
 
@@ -2438,17 +2440,21 @@ html {
 
 .footer__container .footer__menu .footer__list ul {
   overflow: hidden;
-}
-
-@media only screen and (max-width: 576px) {
-  .footer__container .footer__menu .footer__list ul {
-    height: 0;
-  }
+  max-height: 1000px;
+  width: 100%;
+  -webkit-transition: 0.2s linear;
+  transition: 0.2s linear;
 }
 
 .footer__container .footer__menu .footer__list ul .footer__item {
   padding-bottom: 16px;
   padding-right: 16px;
+}
+
+@media only screen and (max-width: 576px) {
+  .footer__container .footer__menu .footer__list ul .footer__item {
+    padding-right: 0;
+  }
 }
 
 .footer__container .footer__menu .footer__list ul .footer__item a {
@@ -2460,6 +2466,15 @@ html {
 
 .footer__container .footer__menu .footer__list ul .footer__item a:hover {
   text-decoration: underline;
+}
+
+.footer__container .footer__menu .footer__list ul.close {
+  max-height: 0;
+}
+
+.footer__container .footer__menu .footer__list.open::after {
+  -webkit-transform: rotate(-180deg);
+          transform: rotate(-180deg);
 }
 
 .footer__container .footer__infor {

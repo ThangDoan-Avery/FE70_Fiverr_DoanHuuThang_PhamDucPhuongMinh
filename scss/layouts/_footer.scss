@@ -30,6 +30,7 @@
             position: absolute;
             top: 0;
             right: 0;
+            transition: 0.2s linear;
           }
         }
         h6 {
@@ -40,12 +41,15 @@
         }
         ul {
           overflow: hidden;
-          @include Responsive(SM) {
-            height: 0;
-          }
+          max-height: 1000px;
+          width: 100%;
+          transition: 0.2s linear;
           .footer__item {
             padding-bottom: 16px;
             padding-right: 16px;
+            @include Responsive(SM) {
+              padding-right: 0;
+            }
             a {
               font-size: 1.6rem;
               line-height: 2.4rem;
@@ -56,6 +60,14 @@
               }
             }
           }
+        }
+        ul.close {
+          max-height: 0;
+        }
+      }
+      .footer__list.open {
+        &::after {
+          transform: rotate(-180deg);
         }
       }
     }
