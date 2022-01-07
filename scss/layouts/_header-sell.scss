@@ -86,7 +86,7 @@
         display: flex;
         align-items: center;
         @include Responsive(XXL) {
-          width: 15%;
+          width: 25%;
         }
         @include Responsive(XL) {
           width: 30%;
@@ -146,12 +146,17 @@
         }
         .header__options--link {
           margin: 0 10px;
-          @include Responsive(XL) {
+          @include Responsive(XXL) {
             display: none;
             &:last-child,
             &:nth-last-child(2),
             &:nth-last-child(3) {
               display: block;
+            }
+          }
+          @include Responsive(LG) {
+            &:nth-last-child(3) {
+              display: none;
             }
           }
           @include Responsive(MD) {
@@ -186,7 +191,7 @@
           margin: 0 10px;
           position: relative;
           font-weight: 500;
-          @include Responsive(XL) {
+          @include Responsive(XXL) {
             display: none;
           }
           span {
@@ -271,7 +276,7 @@
           margin: 0 10px;
           position: relative;
           font-weight: 400;
-          @include Responsive(XL) {
+          @include Responsive(XXL) {
             display: none;
           }
           span {
@@ -338,7 +343,7 @@
           margin: 0 10px;
           position: relative;
           font-weight: 500;
-          @include Responsive(XL) {
+          @include Responsive(XXL) {
             display: none;
           }
           span {

@@ -1,4 +1,11 @@
 .header {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 999;
+  background-color: #fff;
+  transition: 0.2s linear;
   &-top {
     color: $black-color;
     padding: 25px 32px;
@@ -43,11 +50,18 @@
           }
         }
       }
+      .header__search-input.close {
+        opacity: 0;
+        visibility: hidden;
+      }
       .header__search-input {
         position: relative;
         width: 30%;
         display: flex;
         align-items: center;
+        opacity: 1;
+        visibility: visible;
+        transition: 0.2s linear;
         @include Responsive(XXL) {
           width: 15%;
         }
@@ -171,6 +185,7 @@
                 font-size: 1.6rem;
                 font-weight: 300;
                 margin-bottom: 8px;
+                color: $black-color;
               }
               p {
                 font-size: 1.4rem;
@@ -252,6 +267,8 @@
               padding: 12px 0 12px 48px;
               position: relative;
               font-size: 1.6rem;
+              color: $black-color;
+
               cursor: pointer;
               &:hover {
                 background-color: #f5f5f5;
@@ -327,6 +344,7 @@
                 font-size: 1.6rem;
                 font-weight: 300;
                 margin-bottom: 8px;
+                color: $black-color;
               }
               p {
                 font-size: 1.6rem;
@@ -370,6 +388,9 @@
   }
   &-bottom {
     padding: 0 32px;
+    border-bottom: 1px solid $border-color;
+    overflow: hidden;
+    transition: 0.2s linear;
     @include Responsive(XXL) {
       display: none;
     }
@@ -398,6 +419,32 @@
           &:hover {
             &::after {
               display: block;
+            }
+          }
+        }
+      }
+    }
+  }
+  &-bottom.close {
+    height: 0;
+    border: none;
+  }
+}
+
+.header--transparent {
+  background-color: transparent;
+  .header-top {
+    color: #fff;
+    border: none;
+    .header-top__container {
+      .header__options {
+        color: #fff;
+        .header__options--link {
+          .btn {
+            color: #fff;
+            border-color: #fff;
+            &:hover {
+              border-color: $green-color;
             }
           }
         }

@@ -69,7 +69,59 @@ $(document).ready(function () {
     slidesToScroll: 1,
     infinite: true,
   });
+
+  $(".project__list").slick({
+    dots: true,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 4,
+    infinite: true,
+    responsive: [
+      {
+        breakpoint: 1059,
+        settings: {
+          slidesToShow: 3,
+          slidesToScroll: 3,
+          dots: true,
+        },
+      },
+      {
+        breakpoint: 800,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 2,
+        },
+      },
+      {
+        breakpoint: 600,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+        },
+      },
+    ],
+  });
 });
+
+// Event header when window scroll
+const header = document.querySelector(".header");
+const headerInputSearch = document.querySelector(".header__search-input");
+const headerBottom = document.querySelector(".header-bottom");
+window.onscroll = () => {
+  let heightScroll = window.scrollY;
+  if (heightScroll > 0) {
+    header.classList.remove("header--transparent");
+    if (heightScroll > 200) {
+      headerBottom.classList.remove("close");
+      headerInputSearch.classList.remove("close");
+    } else {
+      headerBottom.classList.add("close");
+      headerInputSearch.classList.add("close");
+    }
+  } else {
+    header.classList.add("header--transparent");
+  }
+};
 
 // Popup Menu
 const menuPhoneItems = document.querySelectorAll(".menu-phone__item");
@@ -149,3 +201,25 @@ popupVideoOverlay.onclick = () => {
   videoTag.setAttribute("src", "");
   document.querySelector("body").classList.remove("noscroll");
 };
+
+// popup Q&A
+const menuPhoneItemsQA = document.querySelectorAll(".qanda__item");
+
+menuPhoneItemsQA.forEach((menuPhoneItemQA) => {
+  menuPhoneItemQA.onclick = () => {
+    let isOpen = menuPhoneItemQA.classList.contains("open");
+    let ulTag = menuPhoneItemQA.querySelector("ul");
+    if (isOpen) {
+      menuPhoneItemQA.classList.remove("open");
+      // ulTag.style.height = `${ulTag.offsetHeight}px`;
+      setTimeout(() => {
+        ulTag.style.height = "0";
+      }, 100);
+    } else {
+      menuPhoneItemQA.classList.add("open");
+      setTimeout(() => {
+        ulTag.style.height = "fit-content";
+      }, 100);
+    }
+  };
+});

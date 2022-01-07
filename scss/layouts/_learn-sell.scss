@@ -1,0 +1,147 @@
+.learn {
+  overflow: hidden;
+  padding: 48px 100px 20px;
+  background-color: $white;
+  @include Responsive(XL) {
+    padding: 8px 10px 2px;
+  }
+  &__all {
+    background-color: $gray-bg;
+    padding: 40px 0;
+    &-info {
+      padding: 24px 0 4px 64px;
+      @include Responsive(XL) {
+        padding: 24px 20px 0;
+      }
+      .learn-logo {
+        padding: 0 0 20px;
+      }
+      h2 {
+        font-size: 32px;
+        line-height: 38.4px;
+        font-weight: 600;
+        color: #404145;
+      }
+      p {
+        font-size: 18px;
+        line-height: 26px;
+        padding: 12px 0 25px;
+        color: #7a7d85
+      }
+      a {
+        padding: 11px 37px;
+        @include Responsive(XL) {
+          width: 100%;
+          margin: 0;
+        }
+      }
+    }
+    .benefit__thumnail-video {
+      position: relative;
+      cursor: pointer;
+      overflow: hidden;
+      padding: 0 64px;
+      @include Responsive(XL) {
+        padding: 24px 20px;
+      }
+      img {
+        width: 100%;
+        border-radius: 5px;
+      }
+      &::after {
+        content: "\f04b";
+        font-family: "Font Awesome 5 Free";
+        font-weight: 900;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        height: 80px;
+        width: 80px;
+        color: $white;
+        font-size: 3rem;
+        background-color: #00000070;
+        border-radius: 50%;
+      }
+      .video__info {
+        display: flex;
+        padding-left: 5px;
+        font-size: 18px;
+        justify-content: flex-end;
+        line-height: 24.3px;
+        color: $white;
+        font-weight: 600;
+        position: absolute;
+        z-index: 3;
+        bottom: 10%;
+        h3 {
+          @include Responsive(XL) {
+            font-size: 28px;
+          }
+          @include Responsive(MD) {
+            font-size: 23px;
+          }
+          @include Responsive(XS) {
+            font-size: 18px;
+          }
+        }
+        span {
+          font-size: 14px;
+          line-height: 14px;
+          margin-bottom: 29px;
+          margin-left: 10px;
+          padding: 2px 8px;
+          background-color: $primary-main;
+          @include Responsive(XL) {
+            display: none;
+          }
+        }
+      }
+      .video__caption {
+        span {
+          position: absolute;
+          font-size: 14px;
+          padding: 2px 8px;
+          z-index: 9;
+          color: $white;
+          top: 10%;
+          right: 5%;
+          display: none;
+          background-color: $primary-main;
+          @include Responsive(XL) {
+            display: block;
+            padding: 5px 14px;
+          }
+          @include Responsive(XS) {
+            display: block;
+            top: 16%;
+            right: 10%;
+          }
+        }
+      }
+      .video__rating {
+        position: absolute;
+        bottom: 3%;
+        padding-left: 5px;
+        @include Responsive(XL) {
+          display: none;
+        }
+        i {
+          color: #ffc100;
+          font-size: 13px;
+        }
+        span:nth-last-child(2){
+          color: #ffc100;
+          font-size: 14px;
+        }
+        span:nth-last-child(1){
+          color: $white;
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}

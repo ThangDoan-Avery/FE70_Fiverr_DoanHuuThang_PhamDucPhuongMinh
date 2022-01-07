@@ -1,6 +1,8 @@
 $XS: 480px;
 $SM: 576px;
+$SMP:660px;
 $MD: 800px;
+$LGP: 992px;
 $LG: 960px;
 $XL: 1068px;
 $XXL: 1284px;
@@ -15,12 +17,20 @@ $XXXL: 1440px;
     @media only screen and (max-width: $SM) {
       @content;
     }
+  } @else if $canvas == SMP {
+    @media only screen and (max-width: $SMP) {
+      @content;
+    }
   } @else if $canvas == MD {
     @media only screen and (max-width: $MD) {
       @content;
     }
   } @else if $canvas == LG {
     @media only screen and (max-width: $LG) {
+      @content;
+    }
+  } @else if $canvas == LGP {
+    @media only screen and (max-width: $LGP) {
       @content;
     }
   } @else if $canvas == XL {
