@@ -892,38 +892,7 @@
     ></script>
     <!-- Slick -->
     <script src="./lib/slick/slick.min.js"></script>
-    <script>
-      // when click carousel, slide is not autoplay
-      // This is solution, slide is autoplay when click other window/tab
-      $("#latest-news-wrapper").on(
-        "beforeChange",
-        function (event, slick, currentSlide, nextSlide) {
-          $("#latest-news-wrapper .slick-dots li")
-            .removeClass("slick-active")
-            .attr("aria-hidden", "true");
-          $("#latest-news-wrapper .slick-dots li button").focus(function () {
-            this.blur();
-          });
-        }
-      );
-
-      $(document).ready(function () {
-        $(".our-freelance__mobile--content").slick({
-          infinite: true,
-          speed: 500,
-          // fade: true,
-          // cssEase: "linear",
-          autoplay: true,
-
-          dots: true,
-          // infinite: true,
-          // speed: 300,
-          // slidesToShow: 1,
-          // adaptiveHeight: true
-        });
-      });
-    </script>
     <!-- JS -->
-    <script src="./js/home.js"></script>
+    <script src="./js/selling.js"></script>
   </body>
 </html>
