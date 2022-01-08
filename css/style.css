@@ -2602,33 +2602,141 @@ html {
   background-color: #efeff0;
 }
 
-.footer__container .footer__infor .footer__option span {
-  font-size: 1.6rem;
+.footer__container .footer__infor .footer__option {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  font-size: 16px;
   line-height: 24px;
-  padding: 8px 12px;
-  margin-right: 4px;
-  border-radius: 20px;
-  display: inline-block;
-  cursor: pointer;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media only screen and (max-width: 576px) {
-  .footer__container .footer__infor .footer__option span {
-    margin-bottom: 20px;
+  .footer__container .footer__infor .footer__option {
+    margin-top: 5px;
   }
 }
 
-.footer__container .footer__infor .footer__option span:hover {
-  background-color: #efeff0;
+.footer__container .footer__infor .footer__option .option-money .modal .modal-dialog .modal-content .modal-body {
+  max-height: 600px;
+  overflow-x: hidden;
+  overflow-y: scroll;
 }
 
-.footer__container .footer__infor .footer__option span:last-child {
-  border: 1px solid #7a7d84;
-  border-radius: 50%;
-  padding: 7px 13px;
+.footer__container .footer__infor .footer__option button {
+  font-size: 14px;
+  line-height: 21px;
+  word-spacing: 1px;
+  border: none;
+  background-color: transparent;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  color: #83868d;
+  font-weight: 500;
+  padding: 8px 12px;
 }
 
-.footer__container .footer__infor .footer__option span:last-child:hover {
-  border-color: #efeff0;
+@media only screen and (max-width: 660px) {
+  .footer__container .footer__infor .footer__option button {
+    margin-right: 0;
+  }
+}
+
+.footer__container .footer__infor .footer__option button:focus {
+  outline: none;
+}
+
+.footer__container .footer__infor .footer__option button:hover {
+  color: #404145;
+  background-color: #f5f5f5;
+  border-radius: 54px;
+}
+
+.footer__container .footer__infor .footer__option button:hover span {
+  color: #404145;
+}
+
+.footer__container .footer__infor .footer__option button span {
+  color: #83868d;
+}
+
+.footer__container .footer__infor .footer__option .btn-languages i {
+  padding-right: 7px;
+}
+
+.footer__container .footer__infor .footer__option .modal-content .modal-header {
+  padding: 32px 32px 24px;
+  border-bottom: none;
+}
+
+.footer__container .footer__infor .footer__option .modal-content .modal-header h5 {
+  font-weight: 600;
+  color: #404145;
+  font-size: 20px;
+  line-height: 22px;
+}
+
+.footer__container .footer__infor .footer__option .modal-content .modal-header button {
+  font-size: 20px;
+}
+
+.footer__container .footer__infor .footer__option .modal-content .modal-body .options--languages,
+.footer__container .footer__infor .footer__option .modal-content .modal-body .options--money {
+  padding: 12px 25px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
+.footer__container .footer__infor .footer__option .modal-content .modal-body .options--languages:hover,
+.footer__container .footer__infor .footer__option .modal-content .modal-body .options--money:hover {
+  background: #f7f7f7;
+}
+
+.footer__container .footer__infor .footer__option .modal-content .modal-body .options--languages span,
+.footer__container .footer__infor .footer__option .modal-content .modal-body .options--money span {
+  margin-left: 22px;
+  font-size: 16px;
+  color: #62646a;
+}
+
+.footer__container .footer__infor .footer__option .modal-content .modal-body .options--money .title__title {
+  font-weight: 700;
+  color: #404145;
+}
+
+.footer__container .footer__infor .footer__option .modal-content .modal-body .selected a {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.footer__container .footer__infor .footer__option .modal-content .modal-body .selected a i {
+  font-size: 10px;
+  color: #62646a;
+}
+
+.footer__container .footer__infor .footer__option .modal-content .modal-body .selected a p span {
+  margin-left: 15px;
+}
+
+.footer__container .footer__infor .footer__option .btn-access {
+  padding: 0;
+  font-size: 22px;
 }
 /*# sourceMappingURL=style.css.map */

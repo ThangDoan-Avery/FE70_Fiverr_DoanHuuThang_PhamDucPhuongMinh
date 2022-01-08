@@ -143,28 +143,114 @@
         }
       }
       .footer__option {
-        span {
-          font-size: 1.6rem;
-          line-height: 24px;
-          padding: 8px 12px;
-          margin-right: 4px;
-          border-radius: 20px;
-          display: inline-block;
-          cursor: pointer;
-          @include Responsive(SM) {
-            margin-bottom: 20px;
-          }
-          &:hover {
-            background-color: #efeff0;
-          }
-          &:last-child {
-            border: 1px solid $grey-color;
-            border-radius: 50%;
-            padding: 7px 13px;
-            &:hover {
-              border-color: #efeff0;
+        display: flex;
+        font-size: 16px;
+        line-height: 24px;
+        justify-content: center;
+        align-items: center;
+        @include Responsive(SM) {
+          margin-top: 5px;
+        }
+        .option-money {
+          .modal {
+            .modal-dialog {
+              .modal-content {
+                .modal-body {
+                  max-height: 600px;
+                  overflow-x: hidden;
+                  overflow-y: scroll;
+                }
+              }
             }
           }
+        }
+        button {
+          font-size: 14px;
+          line-height: 21px;
+          word-spacing: 1px;
+          border: none;
+          background-color: transparent;
+          display: flex;
+          align-items: center;
+          color: #83868d;
+          font-weight: 500;
+          padding: 8px 12px;
+          @include Responsive(SMP) {
+            margin-right: 0;
+          }
+          &:focus {
+            outline: none;
+          }
+          &:hover {
+            color: #404145;
+            background-color: #f5f5f5;
+            border-radius: 54px;
+          }
+          &:hover span {
+            color: #404145;
+          }
+          span {
+            color: #83868d;
+          }
+        }
+        .btn-languages {
+          i {
+            padding-right: 7px;
+          }
+        }
+        .modal-content {
+          .modal-header {
+            padding: 32px 32px 24px;
+            border-bottom: none;
+            h5 {
+              font-weight: 600;
+              color: #404145;
+              font-size: 20px;
+              line-height: 22px;
+            }
+            button {
+              font-size: 20px;
+            }
+          }
+          .modal-body {
+            .options--languages,
+            .options--money {
+              padding: 12px 25px;
+              display: flex;
+              &:hover {
+                background: #f7f7f7;
+              }
+              span {
+                margin-left: 22px;
+                font-size: 16px;
+                color: #62646a;
+              }
+            }
+            .options--money {
+              .title__title {
+                font-weight: 700;
+                color: #404145;
+              }
+            }
+            .selected a {
+              display: flex;
+              justify-content: center;
+              align-items: center;
+              i {
+                font-size: 10px;
+                color: #62646a;
+              }
+              p {
+                span {
+                  margin-left: 15px;
+                }
+              }
+            }
+          }
+        }
+        .btn-access {
+          padding: 0;
+          font-size: 22px;
         }
       }
     }
